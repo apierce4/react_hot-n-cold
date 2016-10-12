@@ -1,0 +1,239 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm',
+1 verbose cli   'instal',
+1 verbose cli   'react-addons-update' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /home/ubuntu/workspace/package.json
+5 warn package.json react-example@0.0.0 No repository field.
+6 warn package.json react-example@0.0.0 No license field.
+7 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/async/package.json
+8 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/babel-core/package.json
+9 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/babel-loader/package.json
+10 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/babel-preset-es2015/package.json
+11 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/babel-preset-react/package.json
+12 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/babel-register/package.json
+13 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/chai/package.json
+14 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/express/package.json
+15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mocha/package.json
+16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react/package.json
+17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-addons-test-utils/package.json
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-dom/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/redux/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
+21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack/package.json
+22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack-dev-server/package.json
+23 info package.json async@0.2.10 No license field.
+24 info package.json express@3.2.6 No license field.
+25 info package.json socket.io@0.9.17 No license field.
+26 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+27 silly cache add args [ 'react-addons-update', null ]
+28 verbose cache add spec react-addons-update
+29 silly cache add parsed spec Result {
+29 silly cache add   raw: 'react-addons-update',
+29 silly cache add   scope: null,
+29 silly cache add   name: 'react-addons-update',
+29 silly cache add   rawSpec: '',
+29 silly cache add   spec: 'latest',
+29 silly cache add   type: 'tag' }
+30 silly addNamed react-addons-update@latest
+31 verbose addNamed "latest" is being treated as a dist-tag for react-addons-update
+32 info addNameTag [ 'react-addons-update', 'latest' ]
+33 silly mapToRegistry name react-addons-update
+34 silly mapToRegistry using default registry
+35 silly mapToRegistry registry https://registry.npmjs.org/
+36 silly mapToRegistry data Result {
+36 silly mapToRegistry   raw: 'react-addons-update',
+36 silly mapToRegistry   scope: null,
+36 silly mapToRegistry   name: 'react-addons-update',
+36 silly mapToRegistry   rawSpec: '',
+36 silly mapToRegistry   spec: 'latest',
+36 silly mapToRegistry   type: 'tag' }
+37 silly mapToRegistry uri https://registry.npmjs.org/react-addons-update
+38 verbose addNameTag registry:https://registry.npmjs.org/react-addons-update not in flight; fetching
+39 verbose request uri https://registry.npmjs.org/react-addons-update
+40 verbose request no auth needed
+41 info attempt registry request try #1 at 5:15:14 PM
+42 verbose request id 08031efa5be1044b
+43 http request GET https://registry.npmjs.org/react-addons-update
+44 http 200 https://registry.npmjs.org/react-addons-update
+45 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+45 verbose headers   etag: '"A3PG27WMCVRFHCLBLJ9KCWZVW"',
+45 verbose headers   'content-type': 'application/json',
+45 verbose headers   'content-encoding': 'gzip',
+45 verbose headers   'cache-control': 'max-age=300',
+45 verbose headers   'content-length': '6158',
+45 verbose headers   'accept-ranges': 'bytes',
+45 verbose headers   date: 'Fri, 07 Oct 2016 17:15:14 GMT',
+45 verbose headers   via: '1.1 varnish',
+45 verbose headers   age: '0',
+45 verbose headers   connection: 'keep-alive',
+45 verbose headers   'x-served-by': 'cache-ord1741-ORD',
+45 verbose headers   'x-cache': 'HIT',
+45 verbose headers   'x-cache-hits': '1',
+45 verbose headers   'x-timer': 'S1475860514.516434,VS0,VE84',
+45 verbose headers   vary: 'Accept-Encoding' }
+46 silly get cb [ 200,
+46 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+46 silly get     etag: '"A3PG27WMCVRFHCLBLJ9KCWZVW"',
+46 silly get     'content-type': 'application/json',
+46 silly get     'content-encoding': 'gzip',
+46 silly get     'cache-control': 'max-age=300',
+46 silly get     'content-length': '6158',
+46 silly get     'accept-ranges': 'bytes',
+46 silly get     date: 'Fri, 07 Oct 2016 17:15:14 GMT',
+46 silly get     via: '1.1 varnish',
+46 silly get     age: '0',
+46 silly get     connection: 'keep-alive',
+46 silly get     'x-served-by': 'cache-ord1741-ORD',
+46 silly get     'x-cache': 'HIT',
+46 silly get     'x-cache-hits': '1',
+46 silly get     'x-timer': 'S1475860514.516434,VS0,VE84',
+46 silly get     vary: 'Accept-Encoding' } ]
+47 verbose get saving react-addons-update to /home/ubuntu/.npm/registry.npmjs.org/react-addons-update/.cache.json
+48 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+49 silly addNameTag next cb for react-addons-update with tag latest
+50 silly addNamed react-addons-update@15.3.2
+51 verbose addNamed "15.3.2" is a plain semver version for react-addons-update
+52 silly mapToRegistry name react-addons-update
+53 silly mapToRegistry using default registry
+54 silly mapToRegistry registry https://registry.npmjs.org/
+55 silly mapToRegistry data Result {
+55 silly mapToRegistry   raw: 'react-addons-update',
+55 silly mapToRegistry   scope: null,
+55 silly mapToRegistry   name: 'react-addons-update',
+55 silly mapToRegistry   rawSpec: '',
+55 silly mapToRegistry   spec: 'latest',
+55 silly mapToRegistry   type: 'tag' }
+56 silly mapToRegistry uri https://registry.npmjs.org/react-addons-update
+57 verbose addRemoteTarball https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz not in flight; adding
+58 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz',
+58 verbose addRemoteTarball   'b6385c4db1e5df371825e0615b04360ed94430fe' ]
+59 info retry fetch attempt 1 at 5:15:14 PM
+60 info attempt registry request try #1 at 5:15:14 PM
+61 http fetch GET https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz
+62 http fetch 200 https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz
+63 silly fetchAndShaCheck shasum b6385c4db1e5df371825e0615b04360ed94430fe
+64 verbose addTmpTarball /tmp/npm-3813-38348a6b/registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz not in flight; adding
+65 verbose addTmpTarball already have metadata; skipping unpack for react-addons-update@15.3.2
+66 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+67 silly cache afterAdd react-addons-update@15.3.2
+68 verbose afterAdd /home/ubuntu/.npm/react-addons-update/15.3.2/package/package.json not in flight; writing
+69 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+70 verbose afterAdd /home/ubuntu/.npm/react-addons-update/15.3.2/package/package.json written
+71 silly install resolved [ { name: 'react-addons-update',
+71 silly install resolved     version: '15.3.2',
+71 silly install resolved     main: 'index.js',
+71 silly install resolved     repository:
+71 silly install resolved      { type: 'git',
+71 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
+71 silly install resolved     keywords: [ 'react', 'react-addon' ],
+71 silly install resolved     license: 'BSD-3-Clause',
+71 silly install resolved     dependencies: {},
+71 silly install resolved     peerDependencies: { react: '^15.3.2' },
+71 silly install resolved     files: [ 'LICENSE', 'PATENTS', 'README.md', 'index.js' ],
+71 silly install resolved     description: 'This package provides the React updates add-on.',
+71 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
+71 silly install resolved     homepage: 'https://github.com/facebook/react#readme',
+71 silly install resolved     _id: 'react-addons-update@15.3.2',
+71 silly install resolved     _shasum: 'b6385c4db1e5df371825e0615b04360ed94430fe',
+71 silly install resolved     _resolved: 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz',
+71 silly install resolved     _from: 'react-addons-update@latest',
+71 silly install resolved     scripts: {},
+71 silly install resolved     _npmVersion: '3.10.3',
+71 silly install resolved     _nodeVersion: '6.5.0',
+71 silly install resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
+71 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+71 silly install resolved     dist:
+71 silly install resolved      { shasum: 'b6385c4db1e5df371825e0615b04360ed94430fe',
+71 silly install resolved        tarball: 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz' },
+71 silly install resolved     _npmOperationalInternal:
+71 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+71 silly install resolved        tmp: 'tmp/react-addons-update-15.3.2.tgz_1474307213160_0.6651179669424891' },
+71 silly install resolved     directories: {} } ]
+72 info install react-addons-update@15.3.2 into /home/ubuntu/workspace
+73 info installOne react-addons-update@15.3.2
+74 verbose installOne of react-addons-update to /home/ubuntu/workspace not in flight; installing
+75 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+76 verbose lock using /home/ubuntu/.npm/_locks/react-addons-update-3861c9598bf9338b.lock for /home/ubuntu/workspace/node_modules/react-addons-update
+77 silly install write writing react-addons-update 15.3.2 to /home/ubuntu/workspace/node_modules/react-addons-update
+78 verbose unbuild node_modules/react-addons-update
+79 silly gentlyRm /home/ubuntu/workspace/node_modules/react-addons-update is being purged from base /home/ubuntu/workspace
+80 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-addons-update
+81 verbose tar unpack /home/ubuntu/.npm/react-addons-update/15.3.2/package.tgz
+82 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-addons-update
+83 silly gentlyRm /home/ubuntu/workspace/node_modules/react-addons-update is being purged
+84 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-addons-update
+85 silly gunzTarPerm modes [ '755', '644' ]
+86 silly gunzTarPerm extractEntry package.json
+87 silly gunzTarPerm extractEntry README.md
+88 silly gunzTarPerm extractEntry LICENSE
+89 silly gunzTarPerm extractEntry index.js
+90 silly gunzTarPerm extractEntry PATENTS
+91 verbose write writing to /home/ubuntu/workspace/node_modules/react-addons-update/package.json
+92 info preinstall react-addons-update@15.3.2
+93 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
+94 silly prepareForInstallMany adding react@^15.3.2 from react-addons-update peerDependencies
+95 warn peerDependencies The peer dependency react@^15.3.2 included from react-addons-update will no
+96 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+97 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+98 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
+99 silly install resolved []
+100 verbose about to build /home/ubuntu/workspace/node_modules/react-addons-update
+101 info build /home/ubuntu/workspace/node_modules/react-addons-update
+102 info linkStuff react-addons-update@15.3.2
+103 silly linkStuff react-addons-update@15.3.2 has /home/ubuntu/workspace/node_modules as its parent node_modules
+104 verbose linkBins react-addons-update@15.3.2
+105 verbose linkMans react-addons-update@15.3.2
+106 verbose rebuildBundles react-addons-update@15.3.2
+107 info install react-addons-update@15.3.2
+108 info postinstall react-addons-update@15.3.2
+109 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+110 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/async/package.json
+111 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-core/package.json
+112 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-loader/package.json
+113 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-preset-es2015/package.json
+114 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-preset-react/package.json
+115 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-register/package.json
+116 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/chai/package.json
+117 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/express/package.json
+118 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/mocha/package.json
+119 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react/package.json
+120 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-addons-test-utils/package.json
+121 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
+122 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-dom/package.json
+123 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/redux/package.json
+124 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
+125 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/webpack/package.json
+126 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/webpack-dev-server/package.json
+127 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/express/package.json
+128 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/mocha/package.json
+129 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/webpack/package.json
+130 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/webpack-dev-server/package.json
+131 verbose already installed skipping react@^15.3.2 /home/ubuntu/workspace
+132 silly install resolved []
+133 verbose unlock done using /home/ubuntu/.npm/_locks/react-addons-update-3861c9598bf9338b.lock for /home/ubuntu/workspace/node_modules/react-addons-update
+134 verbose validateInstall loading /home/ubuntu/workspace/package.json for validation
+135 verbose stack Error: The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:125:32
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:268:7
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+136 verbose cwd /home/ubuntu/workspace
+137 error Linux 4.2.0-c9
+138 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "instal" "react-addons-update"
+139 error node v4.4.5
+140 error npm  v2.15.5
+141 error code EPEERINVALID
+142 error peerinvalid The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
+142 error peerinvalid Peer react-dom@15.3.0 wants react@^15.3.0
+142 error peerinvalid Peer react-addons-test-utils@15.3.2 wants react@^15.3.2
+142 error peerinvalid Peer react-addons-update@15.3.2 wants react@^15.3.2
+143 verbose exit [ 1, true ]
