@@ -1,8 +1,9 @@
 0 info it worked if it ends with ok
 1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node',
 1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm',
-1 verbose cli   'instal',
-1 verbose cli   'react-addons-update' ]
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-redux' ]
 2 info using npm@2.15.5
 3 info using node@v4.4.5
 4 verbose install initial load of /home/ubuntu/workspace/package.json
@@ -19,221 +20,2267 @@
 15 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/mocha/package.json
 16 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react/package.json
 17 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-addons-test-utils/package.json
-18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-dom/package.json
-19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/redux/package.json
-20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
-21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack/package.json
-22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack-dev-server/package.json
-23 info package.json async@0.2.10 No license field.
-24 info package.json express@3.2.6 No license field.
+18 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
+19 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/react-dom/package.json
+20 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/redux/package.json
+21 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
+22 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack/package.json
+23 verbose installManyTop reading scoped package data from /home/ubuntu/workspace/node_modules/webpack-dev-server/package.json
+24 info package.json async@0.2.10 No license field.
 25 info package.json socket.io@0.9.17 No license field.
-26 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
-27 silly cache add args [ 'react-addons-update', null ]
-28 verbose cache add spec react-addons-update
-29 silly cache add parsed spec Result {
-29 silly cache add   raw: 'react-addons-update',
-29 silly cache add   scope: null,
-29 silly cache add   name: 'react-addons-update',
-29 silly cache add   rawSpec: '',
-29 silly cache add   spec: 'latest',
-29 silly cache add   type: 'tag' }
-30 silly addNamed react-addons-update@latest
-31 verbose addNamed "latest" is being treated as a dist-tag for react-addons-update
-32 info addNameTag [ 'react-addons-update', 'latest' ]
-33 silly mapToRegistry name react-addons-update
-34 silly mapToRegistry using default registry
-35 silly mapToRegistry registry https://registry.npmjs.org/
-36 silly mapToRegistry data Result {
-36 silly mapToRegistry   raw: 'react-addons-update',
-36 silly mapToRegistry   scope: null,
-36 silly mapToRegistry   name: 'react-addons-update',
-36 silly mapToRegistry   rawSpec: '',
-36 silly mapToRegistry   spec: 'latest',
-36 silly mapToRegistry   type: 'tag' }
-37 silly mapToRegistry uri https://registry.npmjs.org/react-addons-update
-38 verbose addNameTag registry:https://registry.npmjs.org/react-addons-update not in flight; fetching
-39 verbose request uri https://registry.npmjs.org/react-addons-update
-40 verbose request no auth needed
-41 info attempt registry request try #1 at 5:15:14 PM
-42 verbose request id 08031efa5be1044b
-43 http request GET https://registry.npmjs.org/react-addons-update
-44 http 200 https://registry.npmjs.org/react-addons-update
-45 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-45 verbose headers   etag: '"A3PG27WMCVRFHCLBLJ9KCWZVW"',
-45 verbose headers   'content-type': 'application/json',
-45 verbose headers   'content-encoding': 'gzip',
-45 verbose headers   'cache-control': 'max-age=300',
-45 verbose headers   'content-length': '6158',
-45 verbose headers   'accept-ranges': 'bytes',
-45 verbose headers   date: 'Fri, 07 Oct 2016 17:15:14 GMT',
-45 verbose headers   via: '1.1 varnish',
-45 verbose headers   age: '0',
-45 verbose headers   connection: 'keep-alive',
-45 verbose headers   'x-served-by': 'cache-ord1741-ORD',
-45 verbose headers   'x-cache': 'HIT',
-45 verbose headers   'x-cache-hits': '1',
-45 verbose headers   'x-timer': 'S1475860514.516434,VS0,VE84',
-45 verbose headers   vary: 'Accept-Encoding' }
-46 silly get cb [ 200,
-46 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
-46 silly get     etag: '"A3PG27WMCVRFHCLBLJ9KCWZVW"',
-46 silly get     'content-type': 'application/json',
-46 silly get     'content-encoding': 'gzip',
-46 silly get     'cache-control': 'max-age=300',
-46 silly get     'content-length': '6158',
-46 silly get     'accept-ranges': 'bytes',
-46 silly get     date: 'Fri, 07 Oct 2016 17:15:14 GMT',
-46 silly get     via: '1.1 varnish',
-46 silly get     age: '0',
-46 silly get     connection: 'keep-alive',
-46 silly get     'x-served-by': 'cache-ord1741-ORD',
-46 silly get     'x-cache': 'HIT',
-46 silly get     'x-cache-hits': '1',
-46 silly get     'x-timer': 'S1475860514.516434,VS0,VE84',
-46 silly get     vary: 'Accept-Encoding' } ]
-47 verbose get saving react-addons-update to /home/ubuntu/.npm/registry.npmjs.org/react-addons-update/.cache.json
-48 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
-49 silly addNameTag next cb for react-addons-update with tag latest
-50 silly addNamed react-addons-update@15.3.2
-51 verbose addNamed "15.3.2" is a plain semver version for react-addons-update
-52 silly mapToRegistry name react-addons-update
-53 silly mapToRegistry using default registry
-54 silly mapToRegistry registry https://registry.npmjs.org/
-55 silly mapToRegistry data Result {
-55 silly mapToRegistry   raw: 'react-addons-update',
-55 silly mapToRegistry   scope: null,
-55 silly mapToRegistry   name: 'react-addons-update',
-55 silly mapToRegistry   rawSpec: '',
-55 silly mapToRegistry   spec: 'latest',
-55 silly mapToRegistry   type: 'tag' }
-56 silly mapToRegistry uri https://registry.npmjs.org/react-addons-update
-57 verbose addRemoteTarball https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz not in flight; adding
-58 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz',
-58 verbose addRemoteTarball   'b6385c4db1e5df371825e0615b04360ed94430fe' ]
-59 info retry fetch attempt 1 at 5:15:14 PM
-60 info attempt registry request try #1 at 5:15:14 PM
-61 http fetch GET https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz
-62 http fetch 200 https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz
-63 silly fetchAndShaCheck shasum b6385c4db1e5df371825e0615b04360ed94430fe
-64 verbose addTmpTarball /tmp/npm-3813-38348a6b/registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz not in flight; adding
-65 verbose addTmpTarball already have metadata; skipping unpack for react-addons-update@15.3.2
-66 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
-67 silly cache afterAdd react-addons-update@15.3.2
-68 verbose afterAdd /home/ubuntu/.npm/react-addons-update/15.3.2/package/package.json not in flight; writing
-69 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
-70 verbose afterAdd /home/ubuntu/.npm/react-addons-update/15.3.2/package/package.json written
-71 silly install resolved [ { name: 'react-addons-update',
-71 silly install resolved     version: '15.3.2',
-71 silly install resolved     main: 'index.js',
-71 silly install resolved     repository:
-71 silly install resolved      { type: 'git',
-71 silly install resolved        url: 'git+https://github.com/facebook/react.git' },
-71 silly install resolved     keywords: [ 'react', 'react-addon' ],
-71 silly install resolved     license: 'BSD-3-Clause',
-71 silly install resolved     dependencies: {},
-71 silly install resolved     peerDependencies: { react: '^15.3.2' },
-71 silly install resolved     files: [ 'LICENSE', 'PATENTS', 'README.md', 'index.js' ],
-71 silly install resolved     description: 'This package provides the React updates add-on.',
-71 silly install resolved     bugs: { url: 'https://github.com/facebook/react/issues' },
-71 silly install resolved     homepage: 'https://github.com/facebook/react#readme',
-71 silly install resolved     _id: 'react-addons-update@15.3.2',
-71 silly install resolved     _shasum: 'b6385c4db1e5df371825e0615b04360ed94430fe',
-71 silly install resolved     _resolved: 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz',
-71 silly install resolved     _from: 'react-addons-update@latest',
-71 silly install resolved     scripts: {},
-71 silly install resolved     _npmVersion: '3.10.3',
-71 silly install resolved     _nodeVersion: '6.5.0',
-71 silly install resolved     _npmUser: { name: 'zpao', email: 'paul@oshannessy.com' },
-71 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
-71 silly install resolved     dist:
-71 silly install resolved      { shasum: 'b6385c4db1e5df371825e0615b04360ed94430fe',
-71 silly install resolved        tarball: 'https://registry.npmjs.org/react-addons-update/-/react-addons-update-15.3.2.tgz' },
-71 silly install resolved     _npmOperationalInternal:
-71 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
-71 silly install resolved        tmp: 'tmp/react-addons-update-15.3.2.tgz_1474307213160_0.6651179669424891' },
-71 silly install resolved     directories: {} } ]
-72 info install react-addons-update@15.3.2 into /home/ubuntu/workspace
-73 info installOne react-addons-update@15.3.2
-74 verbose installOne of react-addons-update to /home/ubuntu/workspace not in flight; installing
-75 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
-76 verbose lock using /home/ubuntu/.npm/_locks/react-addons-update-3861c9598bf9338b.lock for /home/ubuntu/workspace/node_modules/react-addons-update
-77 silly install write writing react-addons-update 15.3.2 to /home/ubuntu/workspace/node_modules/react-addons-update
-78 verbose unbuild node_modules/react-addons-update
-79 silly gentlyRm /home/ubuntu/workspace/node_modules/react-addons-update is being purged from base /home/ubuntu/workspace
-80 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-addons-update
-81 verbose tar unpack /home/ubuntu/.npm/react-addons-update/15.3.2/package.tgz
-82 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-addons-update
-83 silly gentlyRm /home/ubuntu/workspace/node_modules/react-addons-update is being purged
-84 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-addons-update
-85 silly gunzTarPerm modes [ '755', '644' ]
-86 silly gunzTarPerm extractEntry package.json
-87 silly gunzTarPerm extractEntry README.md
-88 silly gunzTarPerm extractEntry LICENSE
-89 silly gunzTarPerm extractEntry index.js
-90 silly gunzTarPerm extractEntry PATENTS
-91 verbose write writing to /home/ubuntu/workspace/node_modules/react-addons-update/package.json
-92 info preinstall react-addons-update@15.3.2
-93 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
-94 silly prepareForInstallMany adding react@^15.3.2 from react-addons-update peerDependencies
-95 warn peerDependencies The peer dependency react@^15.3.2 included from react-addons-update will no
-96 warn peerDependencies longer be automatically installed to fulfill the peerDependency
-97 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
-98 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
-99 silly install resolved []
-100 verbose about to build /home/ubuntu/workspace/node_modules/react-addons-update
-101 info build /home/ubuntu/workspace/node_modules/react-addons-update
-102 info linkStuff react-addons-update@15.3.2
-103 silly linkStuff react-addons-update@15.3.2 has /home/ubuntu/workspace/node_modules as its parent node_modules
-104 verbose linkBins react-addons-update@15.3.2
-105 verbose linkMans react-addons-update@15.3.2
-106 verbose rebuildBundles react-addons-update@15.3.2
-107 info install react-addons-update@15.3.2
-108 info postinstall react-addons-update@15.3.2
-109 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
-110 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/async/package.json
-111 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-core/package.json
-112 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-loader/package.json
-113 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-preset-es2015/package.json
-114 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-preset-react/package.json
-115 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/babel-register/package.json
-116 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/chai/package.json
-117 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/express/package.json
-118 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/mocha/package.json
-119 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react/package.json
-120 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-addons-test-utils/package.json
-121 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-addons-update/package.json
-122 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/react-dom/package.json
-123 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/redux/package.json
-124 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/socket.io/package.json
-125 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/webpack/package.json
-126 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/webpack-dev-server/package.json
-127 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/express/package.json
-128 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/mocha/package.json
-129 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/webpack/package.json
-130 verbose targetResolver reading package data from /home/ubuntu/workspace/node_modules/.bin/webpack-dev-server/package.json
-131 verbose already installed skipping react@^15.3.2 /home/ubuntu/workspace
-132 silly install resolved []
-133 verbose unlock done using /home/ubuntu/.npm/_locks/react-addons-update-3861c9598bf9338b.lock for /home/ubuntu/workspace/node_modules/react-addons-update
-134 verbose validateInstall loading /home/ubuntu/workspace/package.json for validation
-135 verbose stack Error: The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:125:32
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:268:7
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-135 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-135 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-136 verbose cwd /home/ubuntu/workspace
-137 error Linux 4.2.0-c9
-138 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "instal" "react-addons-update"
-139 error node v4.4.5
-140 error npm  v2.15.5
-141 error code EPEERINVALID
-142 error peerinvalid The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
-142 error peerinvalid Peer react-dom@15.3.0 wants react@^15.3.0
-142 error peerinvalid Peer react-addons-test-utils@15.3.2 wants react@^15.3.2
-142 error peerinvalid Peer react-addons-update@15.3.2 wants react@^15.3.2
-143 verbose exit [ 1, true ]
+26 info package.json express@3.2.6 No license field.
+27 verbose readDependencies loading dependencies from /home/ubuntu/workspace/package.json
+28 silly cache add args [ 'react-redux', null ]
+29 verbose cache add spec react-redux
+30 silly cache add parsed spec Result {
+30 silly cache add   raw: 'react-redux',
+30 silly cache add   scope: null,
+30 silly cache add   name: 'react-redux',
+30 silly cache add   rawSpec: '',
+30 silly cache add   spec: 'latest',
+30 silly cache add   type: 'tag' }
+31 silly addNamed react-redux@latest
+32 verbose addNamed "latest" is being treated as a dist-tag for react-redux
+33 info addNameTag [ 'react-redux', 'latest' ]
+34 silly mapToRegistry name react-redux
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'react-redux',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   name: 'react-redux',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/react-redux
+39 verbose addNameTag registry:https://registry.npmjs.org/react-redux not in flight; fetching
+40 verbose request uri https://registry.npmjs.org/react-redux
+41 verbose request no auth needed
+42 info attempt registry request try #1 at 5:32:03 PM
+43 verbose request id 65559d7e2e7819e5
+44 http request GET https://registry.npmjs.org/react-redux
+45 http 200 https://registry.npmjs.org/react-redux
+46 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+46 verbose headers   etag: '"33O5KEH53SCVH8CJ13ZIOOU21"',
+46 verbose headers   'content-type': 'application/json',
+46 verbose headers   'content-encoding': 'gzip',
+46 verbose headers   'cache-control': 'max-age=300',
+46 verbose headers   'content-length': '14481',
+46 verbose headers   'accept-ranges': 'bytes',
+46 verbose headers   date: 'Fri, 11 Nov 2016 17:32:03 GMT',
+46 verbose headers   via: '1.1 varnish',
+46 verbose headers   age: '255',
+46 verbose headers   connection: 'keep-alive',
+46 verbose headers   'x-served-by': 'cache-ord1727-ORD',
+46 verbose headers   'x-cache': 'HIT',
+46 verbose headers   'x-cache-hits': '2',
+46 verbose headers   'x-timer': 'S1478885523.988700,VS0,VE0',
+46 verbose headers   vary: 'Accept-Encoding' }
+47 silly get cb [ 200,
+47 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+47 silly get     etag: '"33O5KEH53SCVH8CJ13ZIOOU21"',
+47 silly get     'content-type': 'application/json',
+47 silly get     'content-encoding': 'gzip',
+47 silly get     'cache-control': 'max-age=300',
+47 silly get     'content-length': '14481',
+47 silly get     'accept-ranges': 'bytes',
+47 silly get     date: 'Fri, 11 Nov 2016 17:32:03 GMT',
+47 silly get     via: '1.1 varnish',
+47 silly get     age: '255',
+47 silly get     connection: 'keep-alive',
+47 silly get     'x-served-by': 'cache-ord1727-ORD',
+47 silly get     'x-cache': 'HIT',
+47 silly get     'x-cache-hits': '2',
+47 silly get     'x-timer': 'S1478885523.988700,VS0,VE0',
+47 silly get     vary: 'Accept-Encoding' } ]
+48 verbose get saving react-redux to /home/ubuntu/.npm/registry.npmjs.org/react-redux/.cache.json
+49 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+50 silly addNameTag next cb for react-redux with tag latest
+51 silly addNamed react-redux@4.4.5
+52 verbose addNamed "4.4.5" is a plain semver version for react-redux
+53 silly mapToRegistry name react-redux
+54 silly mapToRegistry using default registry
+55 silly mapToRegistry registry https://registry.npmjs.org/
+56 silly mapToRegistry data Result {
+56 silly mapToRegistry   raw: 'react-redux',
+56 silly mapToRegistry   scope: null,
+56 silly mapToRegistry   name: 'react-redux',
+56 silly mapToRegistry   rawSpec: '',
+56 silly mapToRegistry   spec: 'latest',
+56 silly mapToRegistry   type: 'tag' }
+57 silly mapToRegistry uri https://registry.npmjs.org/react-redux
+58 verbose addRemoteTarball https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz not in flight; adding
+59 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz',
+59 verbose addRemoteTarball   'f509a2981be2252d10c629ef7c559347a4aec457' ]
+60 info retry fetch attempt 1 at 5:32:04 PM
+61 info attempt registry request try #1 at 5:32:04 PM
+62 http fetch GET https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz
+63 http fetch 200 https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz
+64 silly fetchAndShaCheck shasum f509a2981be2252d10c629ef7c559347a4aec457
+65 verbose addTmpTarball /tmp/npm-3317-df83c0c3/registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz not in flight; adding
+66 verbose addTmpTarball already have metadata; skipping unpack for react-redux@4.4.5
+67 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+68 silly cache afterAdd react-redux@4.4.5
+69 verbose afterAdd /home/ubuntu/.npm/react-redux/4.4.5/package/package.json not in flight; writing
+70 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+71 verbose afterAdd /home/ubuntu/.npm/react-redux/4.4.5/package/package.json written
+72 silly install resolved [ { name: 'react-redux',
+72 silly install resolved     version: '4.4.5',
+72 silly install resolved     description: 'Official React bindings for Redux',
+72 silly install resolved     main: './lib/index.js',
+72 silly install resolved     scripts:
+72 silly install resolved      { 'build:lib': 'babel src --out-dir lib',
+72 silly install resolved        'build:umd': 'cross-env NODE_ENV=development webpack src/index.js dist/react-redux.js',
+72 silly install resolved        'build:umd:min': 'cross-env NODE_ENV=production webpack src/index.js dist/react-redux.min.js',
+72 silly install resolved        build: 'npm run build:lib && npm run build:umd && npm run build:umd:min && node ./prepublish',
+72 silly install resolved        clean: 'rimraf lib dist coverage',
+72 silly install resolved        lint: 'eslint src test',
+72 silly install resolved        prepublish: 'npm run clean && npm run build',
+72 silly install resolved        test: 'mocha --compilers js:babel-register --recursive --require ./test/setup.js',
+72 silly install resolved        'test:watch': 'npm test -- --watch',
+72 silly install resolved        'test:cov': 'babel-node ./node_modules/isparta/bin/isparta cover ./node_modules/mocha/bin/_mocha -- --recursive' },
+72 silly install resolved     repository:
+72 silly install resolved      { type: 'git',
+72 silly install resolved        url: 'https://github.com/reactjs/react-redux.git' },
+72 silly install resolved     files: [ 'dist', 'lib', 'src' ],
+72 silly install resolved     keywords:
+72 silly install resolved      [ 'react',
+72 silly install resolved        'reactjs',
+72 silly install resolved        'hot',
+72 silly install resolved        'reload',
+72 silly install resolved        'hmr',
+72 silly install resolved        'live',
+72 silly install resolved        'edit',
+72 silly install resolved        'flux',
+72 silly install resolved        'redux' ],
+72 silly install resolved     author:
+72 silly install resolved      { name: 'Dan Abramov',
+72 silly install resolved        email: 'dan.abramov@me.com',
+72 silly install resolved        url: 'http://github.com/gaearon' },
+72 silly install resolved     license: 'MIT',
+72 silly install resolved     bugs: { url: 'https://github.com/gaearon/react-redux/issues' },
+72 silly install resolved     homepage: 'https://github.com/gaearon/react-redux',
+72 silly install resolved     devDependencies:
+72 silly install resolved      { 'babel-cli': '^6.3.17',
+72 silly install resolved        'babel-core': '^6.3.26',
+72 silly install resolved        'babel-eslint': '^5.0.0-beta9',
+72 silly install resolved        'babel-loader': '^6.2.0',
+72 silly install resolved        'babel-plugin-check-es2015-constants': '^6.3.13',
+72 silly install resolved        'babel-plugin-syntax-jsx': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-decorators-legacy': '^1.2.0',
+72 silly install resolved        'babel-plugin-transform-es2015-arrow-functions': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-block-scoped-functions': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-block-scoping': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-classes': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-computed-properties': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-destructuring': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-for-of': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-function-name': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-literals': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-modules-commonjs': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-object-super': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-parameters': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-shorthand-properties': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-spread': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-sticky-regex': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-template-literals': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-es2015-unicode-regex': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-object-rest-spread': '^6.3.13',
+72 silly install resolved        'babel-plugin-transform-react-display-name': '^6.4.0',
+72 silly install resolved        'babel-plugin-transform-react-jsx': '^6.4.0',
+72 silly install resolved        'babel-register': '^6.3.13',
+72 silly install resolved        'cross-env': '^1.0.7',
+72 silly install resolved        es3ify: '^0.2.0',
+72 silly install resolved        eslint: '^1.7.1',
+72 silly install resolved        'eslint-config-rackt': '1.1.0',
+72 silly install resolved        'eslint-plugin-react': '^3.6.3',
+72 silly install resolved        expect: '^1.8.0',
+72 silly install resolved        glob: '^6.0.4',
+72 silly install resolved        isparta: '4.0.0',
+72 silly install resolved        istanbul: '^0.3.17',
+72 silly install resolved        jsdom: '~5.4.3',
+72 silly install resolved        mocha: '^2.2.5',
+72 silly install resolved        react: '^0.14.0',
+72 silly install resolved        'react-addons-test-utils': '^0.14.0',
+72 silly install resolved        'react-dom': '^0.14.0',
+72 silly install resolved        redux: '^3.0.0',
+72 silly install resolved        rimraf: '^2.3.4',
+72 silly install resolved        webpack: '^1.11.0' },
+72 silly install resolved     dependencies:
+72 silly install resolved      { 'hoist-non-react-statics': '^1.0.3',
+72 silly install resolved        invariant: '^2.0.0',
+72 silly install resolved        lodash: '^4.2.0',
+72 silly install resolved        'loose-envify': '^1.1.0' },
+72 silly install resolved     peerDependencies: { react: '^0.14.0 || ^15.0.0-0', redux: '^2.0.0 || ^3.0.0' },
+72 silly install resolved     browserify: { transform: [Object] },
+72 silly install resolved     gitHead: 'e06a0a730490dddc669157bff2d751bce987681b',
+72 silly install resolved     _id: 'react-redux@4.4.5',
+72 silly install resolved     _shasum: 'f509a2981be2252d10c629ef7c559347a4aec457',
+72 silly install resolved     _from: 'react-redux@latest',
+72 silly install resolved     _npmVersion: '3.3.12',
+72 silly install resolved     _nodeVersion: '5.3.0',
+72 silly install resolved     _npmUser: { name: 'gaearon', email: 'dan.abramov@gmail.com' },
+72 silly install resolved     dist:
+72 silly install resolved      { shasum: 'f509a2981be2252d10c629ef7c559347a4aec457',
+72 silly install resolved        tarball: 'https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz' },
+72 silly install resolved     maintainers: [ [Object] ],
+72 silly install resolved     _npmOperationalInternal:
+72 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+72 silly install resolved        tmp: 'tmp/react-redux-4.4.5.tgz_1460650477895_0.9361663926392794' },
+72 silly install resolved     directories: {},
+72 silly install resolved     _resolved: 'https://registry.npmjs.org/react-redux/-/react-redux-4.4.5.tgz' } ]
+73 info install react-redux@4.4.5 into /home/ubuntu/workspace
+74 info installOne react-redux@4.4.5
+75 verbose installOne of react-redux to /home/ubuntu/workspace not in flight; installing
+76 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+77 verbose lock using /home/ubuntu/.npm/_locks/react-redux-ce866cbae2e91510.lock for /home/ubuntu/workspace/node_modules/react-redux
+78 silly install write writing react-redux 4.4.5 to /home/ubuntu/workspace/node_modules/react-redux
+79 verbose unbuild node_modules/react-redux
+80 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux is being purged from base /home/ubuntu/workspace
+81 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux
+82 verbose tar unpack /home/ubuntu/.npm/react-redux/4.4.5/package.tgz
+83 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux
+84 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux is being purged
+85 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux
+86 silly gunzTarPerm modes [ '755', '644' ]
+87 silly gunzTarPerm extractEntry package.json
+88 silly gunzTarPerm extractEntry README.md
+89 silly gunzTarPerm extractEntry CHANGELOG.md
+90 silly gunzTarPerm extractEntry dist/react-redux.js
+91 silly gunzTarPerm extractEntry dist/react-redux.min.js
+92 silly gunzTarPerm extractEntry lib/index.js
+93 silly gunzTarPerm extractEntry lib/components/Provider.js
+94 silly gunzTarPerm extractEntry lib/components/connect.js
+95 silly gunzTarPerm extractEntry lib/utils/shallowEqual.js
+96 silly gunzTarPerm extractEntry lib/utils/storeShape.js
+97 silly gunzTarPerm extractEntry lib/utils/warning.js
+98 silly gunzTarPerm extractEntry lib/utils/wrapActionCreators.js
+99 silly gunzTarPerm extractEntry src/index.js
+100 silly gunzTarPerm extractEntry src/components/Provider.js
+101 silly gunzTarPerm extractEntry src/components/connect.js
+102 silly gunzTarPerm extractEntry src/utils/shallowEqual.js
+103 silly gunzTarPerm extractEntry src/utils/storeShape.js
+104 silly gunzTarPerm extractEntry src/utils/warning.js
+105 silly gunzTarPerm extractEntry src/utils/wrapActionCreators.js
+106 silly gunzTarPerm extractEntry LICENSE.md
+107 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/package.json
+108 info preinstall react-redux@4.4.5
+109 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/package.json
+110 silly prepareForInstallMany adding hoist-non-react-statics@^1.0.3 from react-redux dependencies
+111 silly prepareForInstallMany adding invariant@^2.0.0 from react-redux dependencies
+112 silly prepareForInstallMany adding lodash@^4.2.0 from react-redux dependencies
+113 silly prepareForInstallMany adding loose-envify@^1.1.0 from react-redux dependencies
+114 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/package.json
+115 silly cache add args [ 'invariant@^2.0.0', null ]
+116 verbose cache add spec invariant@^2.0.0
+117 silly cache add parsed spec Result {
+117 silly cache add   raw: 'invariant@^2.0.0',
+117 silly cache add   scope: null,
+117 silly cache add   name: 'invariant',
+117 silly cache add   rawSpec: '^2.0.0',
+117 silly cache add   spec: '>=2.0.0 <3.0.0',
+117 silly cache add   type: 'range' }
+118 silly addNamed invariant@>=2.0.0 <3.0.0
+119 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for invariant
+120 silly addNameRange { name: 'invariant', range: '>=2.0.0 <3.0.0', hasData: false }
+121 silly mapToRegistry name invariant
+122 silly mapToRegistry using default registry
+123 silly mapToRegistry registry https://registry.npmjs.org/
+124 silly mapToRegistry data Result {
+124 silly mapToRegistry   raw: 'invariant',
+124 silly mapToRegistry   scope: null,
+124 silly mapToRegistry   name: 'invariant',
+124 silly mapToRegistry   rawSpec: '',
+124 silly mapToRegistry   spec: 'latest',
+124 silly mapToRegistry   type: 'tag' }
+125 silly mapToRegistry uri https://registry.npmjs.org/invariant
+126 verbose addNameRange registry:https://registry.npmjs.org/invariant not in flight; fetching
+127 silly cache add args [ 'lodash@^4.2.0', null ]
+128 verbose cache add spec lodash@^4.2.0
+129 silly cache add parsed spec Result {
+129 silly cache add   raw: 'lodash@^4.2.0',
+129 silly cache add   scope: null,
+129 silly cache add   name: 'lodash',
+129 silly cache add   rawSpec: '^4.2.0',
+129 silly cache add   spec: '>=4.2.0 <5.0.0',
+129 silly cache add   type: 'range' }
+130 silly addNamed lodash@>=4.2.0 <5.0.0
+131 verbose addNamed ">=4.2.0 <5.0.0" is a valid semver range for lodash
+132 silly addNameRange { name: 'lodash', range: '>=4.2.0 <5.0.0', hasData: false }
+133 silly mapToRegistry name lodash
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry data Result {
+136 silly mapToRegistry   raw: 'lodash',
+136 silly mapToRegistry   scope: null,
+136 silly mapToRegistry   name: 'lodash',
+136 silly mapToRegistry   rawSpec: '',
+136 silly mapToRegistry   spec: 'latest',
+136 silly mapToRegistry   type: 'tag' }
+137 silly mapToRegistry uri https://registry.npmjs.org/lodash
+138 verbose addNameRange registry:https://registry.npmjs.org/lodash not in flight; fetching
+139 silly cache add args [ 'loose-envify@^1.1.0', null ]
+140 verbose cache add spec loose-envify@^1.1.0
+141 silly cache add parsed spec Result {
+141 silly cache add   raw: 'loose-envify@^1.1.0',
+141 silly cache add   scope: null,
+141 silly cache add   name: 'loose-envify',
+141 silly cache add   rawSpec: '^1.1.0',
+141 silly cache add   spec: '>=1.1.0 <2.0.0',
+141 silly cache add   type: 'range' }
+142 silly addNamed loose-envify@>=1.1.0 <2.0.0
+143 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for loose-envify
+144 silly addNameRange { name: 'loose-envify', range: '>=1.1.0 <2.0.0', hasData: false }
+145 silly mapToRegistry name loose-envify
+146 silly mapToRegistry using default registry
+147 silly mapToRegistry registry https://registry.npmjs.org/
+148 silly mapToRegistry data Result {
+148 silly mapToRegistry   raw: 'loose-envify',
+148 silly mapToRegistry   scope: null,
+148 silly mapToRegistry   name: 'loose-envify',
+148 silly mapToRegistry   rawSpec: '',
+148 silly mapToRegistry   spec: 'latest',
+148 silly mapToRegistry   type: 'tag' }
+149 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+150 verbose addNameRange registry:https://registry.npmjs.org/loose-envify not in flight; fetching
+151 silly cache add args [ 'hoist-non-react-statics@^1.0.3', null ]
+152 verbose cache add spec hoist-non-react-statics@^1.0.3
+153 silly cache add parsed spec Result {
+153 silly cache add   raw: 'hoist-non-react-statics@^1.0.3',
+153 silly cache add   scope: null,
+153 silly cache add   name: 'hoist-non-react-statics',
+153 silly cache add   rawSpec: '^1.0.3',
+153 silly cache add   spec: '>=1.0.3 <2.0.0',
+153 silly cache add   type: 'range' }
+154 silly addNamed hoist-non-react-statics@>=1.0.3 <2.0.0
+155 verbose addNamed ">=1.0.3 <2.0.0" is a valid semver range for hoist-non-react-statics
+156 silly addNameRange { name: 'hoist-non-react-statics',
+156 silly addNameRange   range: '>=1.0.3 <2.0.0',
+156 silly addNameRange   hasData: false }
+157 silly mapToRegistry name hoist-non-react-statics
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry data Result {
+160 silly mapToRegistry   raw: 'hoist-non-react-statics',
+160 silly mapToRegistry   scope: null,
+160 silly mapToRegistry   name: 'hoist-non-react-statics',
+160 silly mapToRegistry   rawSpec: '',
+160 silly mapToRegistry   spec: 'latest',
+160 silly mapToRegistry   type: 'tag' }
+161 silly mapToRegistry uri https://registry.npmjs.org/hoist-non-react-statics
+162 verbose addNameRange registry:https://registry.npmjs.org/hoist-non-react-statics not in flight; fetching
+163 verbose request uri https://registry.npmjs.org/hoist-non-react-statics
+164 verbose request no auth needed
+165 info attempt registry request try #1 at 5:32:04 PM
+166 http request GET https://registry.npmjs.org/hoist-non-react-statics
+167 verbose request uri https://registry.npmjs.org/invariant
+168 verbose request no auth needed
+169 info attempt registry request try #1 at 5:32:04 PM
+170 verbose etag "BRKR1KLKH2490NF2D6ONHEAWK"
+171 http request GET https://registry.npmjs.org/invariant
+172 verbose request uri https://registry.npmjs.org/loose-envify
+173 verbose request no auth needed
+174 info attempt registry request try #1 at 5:32:04 PM
+175 verbose etag "20PD9NODQOLKPWOKHWSYTIJU1"
+176 http request GET https://registry.npmjs.org/loose-envify
+177 verbose request uri https://registry.npmjs.org/lodash
+178 verbose request no auth needed
+179 info attempt registry request try #1 at 5:32:04 PM
+180 verbose etag "9UJ2JHB3IN61ET0F64L5M5QME"
+181 http request GET https://registry.npmjs.org/lodash
+182 http 200 https://registry.npmjs.org/hoist-non-react-statics
+183 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+183 verbose headers   etag: '"4L6PXM9FBN3FJYUU0EB7DHPNS"',
+183 verbose headers   'content-type': 'application/json',
+183 verbose headers   'content-encoding': 'gzip',
+183 verbose headers   'cache-control': 'max-age=300',
+183 verbose headers   'content-length': '2914',
+183 verbose headers   'accept-ranges': 'bytes',
+183 verbose headers   date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+183 verbose headers   via: '1.1 varnish',
+183 verbose headers   age: '252',
+183 verbose headers   connection: 'keep-alive',
+183 verbose headers   'x-served-by': 'cache-ord1727-ORD',
+183 verbose headers   'x-cache': 'HIT',
+183 verbose headers   'x-cache-hits': '1',
+183 verbose headers   'x-timer': 'S1478885524.200929,VS0,VE0',
+183 verbose headers   vary: 'Accept-Encoding' }
+184 silly get cb [ 200,
+184 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+184 silly get     etag: '"4L6PXM9FBN3FJYUU0EB7DHPNS"',
+184 silly get     'content-type': 'application/json',
+184 silly get     'content-encoding': 'gzip',
+184 silly get     'cache-control': 'max-age=300',
+184 silly get     'content-length': '2914',
+184 silly get     'accept-ranges': 'bytes',
+184 silly get     date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+184 silly get     via: '1.1 varnish',
+184 silly get     age: '252',
+184 silly get     connection: 'keep-alive',
+184 silly get     'x-served-by': 'cache-ord1727-ORD',
+184 silly get     'x-cache': 'HIT',
+184 silly get     'x-cache-hits': '1',
+184 silly get     'x-timer': 'S1478885524.200929,VS0,VE0',
+184 silly get     vary: 'Accept-Encoding' } ]
+185 verbose get saving hoist-non-react-statics to /home/ubuntu/.npm/registry.npmjs.org/hoist-non-react-statics/.cache.json
+186 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+187 silly addNameRange number 2 { name: 'hoist-non-react-statics',
+187 silly addNameRange   range: '>=1.0.3 <2.0.0',
+187 silly addNameRange   hasData: true }
+188 silly addNameRange versions [ 'hoist-non-react-statics',
+188 silly addNameRange   [ '1.0.0',
+188 silly addNameRange     '1.0.1',
+188 silly addNameRange     '1.0.2',
+188 silly addNameRange     '1.0.3',
+188 silly addNameRange     '1.0.4',
+188 silly addNameRange     '1.0.5',
+188 silly addNameRange     '1.0.6',
+188 silly addNameRange     '1.1.0',
+188 silly addNameRange     '1.2.0' ] ]
+189 silly addNamed hoist-non-react-statics@1.2.0
+190 verbose addNamed "1.2.0" is a plain semver version for hoist-non-react-statics
+191 silly mapToRegistry name hoist-non-react-statics
+192 silly mapToRegistry using default registry
+193 silly mapToRegistry registry https://registry.npmjs.org/
+194 silly mapToRegistry data Result {
+194 silly mapToRegistry   raw: 'hoist-non-react-statics',
+194 silly mapToRegistry   scope: null,
+194 silly mapToRegistry   name: 'hoist-non-react-statics',
+194 silly mapToRegistry   rawSpec: '',
+194 silly mapToRegistry   spec: 'latest',
+194 silly mapToRegistry   type: 'tag' }
+195 silly mapToRegistry uri https://registry.npmjs.org/hoist-non-react-statics
+196 verbose addRemoteTarball https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz not in flight; adding
+197 verbose addRemoteTarball [ 'https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz',
+197 verbose addRemoteTarball   'aa448cf0986d55cc40773b17174b7dd066cb7cfb' ]
+198 info retry fetch attempt 1 at 5:32:04 PM
+199 info attempt registry request try #1 at 5:32:04 PM
+200 http fetch GET https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz
+201 http fetch 200 https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz
+202 silly fetchAndShaCheck shasum aa448cf0986d55cc40773b17174b7dd066cb7cfb
+203 verbose addTmpTarball /tmp/npm-3317-df83c0c3/registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz not in flight; adding
+204 verbose addTmpTarball already have metadata; skipping unpack for hoist-non-react-statics@1.2.0
+205 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+206 silly cache afterAdd hoist-non-react-statics@1.2.0
+207 verbose afterAdd /home/ubuntu/.npm/hoist-non-react-statics/1.2.0/package/package.json not in flight; writing
+208 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+209 verbose afterAdd /home/ubuntu/.npm/hoist-non-react-statics/1.2.0/package/package.json written
+210 http 200 https://registry.npmjs.org/invariant
+211 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+211 verbose headers   etag: '"5NOZMST0PKN60AI1CWPN9HVO5"',
+211 verbose headers   'content-type': 'application/json',
+211 verbose headers   'content-encoding': 'gzip',
+211 verbose headers   'cache-control': 'max-age=300',
+211 verbose headers   'content-length': '2942',
+211 verbose headers   'accept-ranges': 'bytes',
+211 verbose headers   date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+211 verbose headers   via: '1.1 varnish',
+211 verbose headers   age: '101',
+211 verbose headers   connection: 'keep-alive',
+211 verbose headers   'x-served-by': 'cache-ord1726-ORD',
+211 verbose headers   'x-cache': 'HIT',
+211 verbose headers   'x-cache-hits': '3',
+211 verbose headers   'x-timer': 'S1478885524.232411,VS0,VE0',
+211 verbose headers   vary: 'Accept-Encoding' }
+212 silly get cb [ 200,
+212 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+212 silly get     etag: '"5NOZMST0PKN60AI1CWPN9HVO5"',
+212 silly get     'content-type': 'application/json',
+212 silly get     'content-encoding': 'gzip',
+212 silly get     'cache-control': 'max-age=300',
+212 silly get     'content-length': '2942',
+212 silly get     'accept-ranges': 'bytes',
+212 silly get     date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+212 silly get     via: '1.1 varnish',
+212 silly get     age: '101',
+212 silly get     connection: 'keep-alive',
+212 silly get     'x-served-by': 'cache-ord1726-ORD',
+212 silly get     'x-cache': 'HIT',
+212 silly get     'x-cache-hits': '3',
+212 silly get     'x-timer': 'S1478885524.232411,VS0,VE0',
+212 silly get     vary: 'Accept-Encoding' } ]
+213 verbose get saving invariant to /home/ubuntu/.npm/registry.npmjs.org/invariant/.cache.json
+214 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+215 http 200 https://registry.npmjs.org/loose-envify
+216 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+216 verbose headers   etag: '"7SFY384OPX1H3W3PK5K3WZRJE"',
+216 verbose headers   'content-type': 'application/json',
+216 verbose headers   'content-encoding': 'gzip',
+216 verbose headers   'cache-control': 'max-age=300',
+216 verbose headers   'content-length': '1838',
+216 verbose headers   'accept-ranges': 'bytes',
+216 verbose headers   date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+216 verbose headers   via: '1.1 varnish',
+216 verbose headers   age: '282',
+216 verbose headers   connection: 'keep-alive',
+216 verbose headers   'x-served-by': 'cache-ord1741-ORD',
+216 verbose headers   'x-cache': 'HIT',
+216 verbose headers   'x-cache-hits': '7',
+216 verbose headers   'x-timer': 'S1478885524.233954,VS0,VE0',
+216 verbose headers   vary: 'Accept-Encoding' }
+217 silly get cb [ 200,
+217 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+217 silly get     etag: '"7SFY384OPX1H3W3PK5K3WZRJE"',
+217 silly get     'content-type': 'application/json',
+217 silly get     'content-encoding': 'gzip',
+217 silly get     'cache-control': 'max-age=300',
+217 silly get     'content-length': '1838',
+217 silly get     'accept-ranges': 'bytes',
+217 silly get     date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+217 silly get     via: '1.1 varnish',
+217 silly get     age: '282',
+217 silly get     connection: 'keep-alive',
+217 silly get     'x-served-by': 'cache-ord1741-ORD',
+217 silly get     'x-cache': 'HIT',
+217 silly get     'x-cache-hits': '7',
+217 silly get     'x-timer': 'S1478885524.233954,VS0,VE0',
+217 silly get     vary: 'Accept-Encoding' } ]
+218 verbose get saving loose-envify to /home/ubuntu/.npm/registry.npmjs.org/loose-envify/.cache.json
+219 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+220 silly addNameRange number 2 { name: 'invariant', range: '>=2.0.0 <3.0.0', hasData: true }
+221 silly addNameRange versions [ 'invariant',
+221 silly addNameRange   [ '1.0.0',
+221 silly addNameRange     '1.0.1',
+221 silly addNameRange     '1.0.2',
+221 silly addNameRange     '2.0.0',
+221 silly addNameRange     '2.1.0',
+221 silly addNameRange     '2.1.1',
+221 silly addNameRange     '2.1.2',
+221 silly addNameRange     '2.1.3',
+221 silly addNameRange     '2.2.0',
+221 silly addNameRange     '2.2.1' ] ]
+222 silly addNamed invariant@2.2.1
+223 verbose addNamed "2.2.1" is a plain semver version for invariant
+224 silly addNameRange number 2 { name: 'loose-envify', range: '>=1.1.0 <2.0.0', hasData: true }
+225 silly addNameRange versions [ 'loose-envify', [ '1.0.0', '1.1.0', '1.2.0', '1.3.0' ] ]
+226 silly addNamed loose-envify@1.3.0
+227 verbose addNamed "1.3.0" is a plain semver version for loose-envify
+228 silly mapToRegistry name loose-envify
+229 silly mapToRegistry using default registry
+230 silly mapToRegistry registry https://registry.npmjs.org/
+231 silly mapToRegistry data Result {
+231 silly mapToRegistry   raw: 'loose-envify',
+231 silly mapToRegistry   scope: null,
+231 silly mapToRegistry   name: 'loose-envify',
+231 silly mapToRegistry   rawSpec: '',
+231 silly mapToRegistry   spec: 'latest',
+231 silly mapToRegistry   type: 'tag' }
+232 silly mapToRegistry uri https://registry.npmjs.org/loose-envify
+233 verbose addRemoteTarball https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz not in flight; adding
+234 verbose addRemoteTarball [ 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz',
+234 verbose addRemoteTarball   '6b26248c42f6d4fa4b0d8542f78edfcde35642a8' ]
+235 info retry fetch attempt 1 at 5:32:04 PM
+236 info attempt registry request try #1 at 5:32:04 PM
+237 http fetch GET https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz
+238 silly cache afterAdd invariant@2.2.1
+239 verbose afterAdd /home/ubuntu/.npm/invariant/2.2.1/package/package.json not in flight; writing
+240 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+241 verbose afterAdd /home/ubuntu/.npm/invariant/2.2.1/package/package.json written
+242 http 200 https://registry.npmjs.org/lodash
+243 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+243 verbose headers   etag: '"74ZCVBVX3UYT3M3SXMFNFI0NL"',
+243 verbose headers   'content-type': 'application/json',
+243 verbose headers   'content-encoding': 'gzip',
+243 verbose headers   'cache-control': 'max-age=300',
+243 verbose headers   'content-length': '19701',
+243 verbose headers   'accept-ranges': 'bytes',
+243 verbose headers   date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+243 verbose headers   via: '1.1 varnish',
+243 verbose headers   age: '248',
+243 verbose headers   connection: 'keep-alive',
+243 verbose headers   'x-served-by': 'cache-ord1746-ORD',
+243 verbose headers   'x-cache': 'HIT',
+243 verbose headers   'x-cache-hits': '13',
+243 verbose headers   'x-timer': 'S1478885524.242579,VS0,VE0',
+243 verbose headers   vary: 'Accept-Encoding' }
+244 silly get cb [ 200,
+244 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+244 silly get     etag: '"74ZCVBVX3UYT3M3SXMFNFI0NL"',
+244 silly get     'content-type': 'application/json',
+244 silly get     'content-encoding': 'gzip',
+244 silly get     'cache-control': 'max-age=300',
+244 silly get     'content-length': '19701',
+244 silly get     'accept-ranges': 'bytes',
+244 silly get     date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+244 silly get     via: '1.1 varnish',
+244 silly get     age: '248',
+244 silly get     connection: 'keep-alive',
+244 silly get     'x-served-by': 'cache-ord1746-ORD',
+244 silly get     'x-cache': 'HIT',
+244 silly get     'x-cache-hits': '13',
+244 silly get     'x-timer': 'S1478885524.242579,VS0,VE0',
+244 silly get     vary: 'Accept-Encoding' } ]
+245 verbose get saving lodash to /home/ubuntu/.npm/registry.npmjs.org/lodash/.cache.json
+246 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+247 http fetch 200 https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz
+248 silly fetchAndShaCheck shasum 6b26248c42f6d4fa4b0d8542f78edfcde35642a8
+249 verbose addTmpTarball /tmp/npm-3317-df83c0c3/registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz not in flight; adding
+250 verbose addTmpTarball already have metadata; skipping unpack for loose-envify@1.3.0
+251 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+252 silly addNameRange number 2 { name: 'lodash', range: '>=4.2.0 <5.0.0', hasData: true }
+253 silly addNameRange versions [ 'lodash',
+253 silly addNameRange   [ '0.1.0',
+253 silly addNameRange     '0.2.0',
+253 silly addNameRange     '0.2.1',
+253 silly addNameRange     '0.2.2',
+253 silly addNameRange     '0.3.0',
+253 silly addNameRange     '0.3.1',
+253 silly addNameRange     '0.3.2',
+253 silly addNameRange     '0.4.0',
+253 silly addNameRange     '0.4.1',
+253 silly addNameRange     '0.4.2',
+253 silly addNameRange     '0.5.0-rc.1',
+253 silly addNameRange     '0.5.0',
+253 silly addNameRange     '0.5.1',
+253 silly addNameRange     '0.5.2',
+253 silly addNameRange     '0.6.0',
+253 silly addNameRange     '0.6.1',
+253 silly addNameRange     '0.7.0',
+253 silly addNameRange     '0.8.0',
+253 silly addNameRange     '0.8.1',
+253 silly addNameRange     '0.8.2',
+253 silly addNameRange     '0.9.0',
+253 silly addNameRange     '0.9.1',
+253 silly addNameRange     '0.9.2',
+253 silly addNameRange     '0.10.0',
+253 silly addNameRange     '1.0.0-rc.1',
+253 silly addNameRange     '1.0.0-rc.2',
+253 silly addNameRange     '1.0.0-rc.3',
+253 silly addNameRange     '1.0.0',
+253 silly addNameRange     '1.0.1',
+253 silly addNameRange     '1.1.0',
+253 silly addNameRange     '1.1.1',
+253 silly addNameRange     '1.2.0',
+253 silly addNameRange     '1.2.1',
+253 silly addNameRange     '1.3.0',
+253 silly addNameRange     '1.3.1',
+253 silly addNameRange     '2.0.0',
+253 silly addNameRange     '2.1.0',
+253 silly addNameRange     '2.2.0',
+253 silly addNameRange     '2.2.1',
+253 silly addNameRange     '2.3.0',
+253 silly addNameRange     '2.4.0',
+253 silly addNameRange     '2.4.1',
+253 silly addNameRange     '3.0.0',
+253 silly addNameRange     '3.0.1',
+253 silly addNameRange     '3.1.0',
+253 silly addNameRange     '3.2.0',
+253 silly addNameRange     '3.3.0',
+253 silly addNameRange     '3.3.1',
+253 silly addNameRange     '3.4.0',
+253 silly addNameRange     '3.5.0',
+253 silly addNameRange     '3.6.0',
+253 silly addNameRange     '1.0.2',
+253 silly addNameRange     '3.7.0',
+253 silly addNameRange     '2.4.2',
+253 silly addNameRange     '3.8.0',
+253 silly addNameRange     '3.9.0',
+253 silly addNameRange     '3.9.1',
+253 silly addNameRange     '3.9.2',
+253 silly addNameRange     '3.9.3',
+253 silly addNameRange     '3.10.0',
+253 silly addNameRange     '3.10.1',
+253 silly addNameRange     '4.0.0',
+253 silly addNameRange     '4.0.1',
+253 silly addNameRange     '4.1.0',
+253 silly addNameRange     '4.2.0',
+253 silly addNameRange     '4.2.1',
+253 silly addNameRange     '4.3.0',
+253 silly addNameRange     '4.4.0',
+253 silly addNameRange     '4.5.0',
+253 silly addNameRange     '4.5.1',
+253 silly addNameRange     '4.6.0',
+253 silly addNameRange     '4.6.1',
+253 silly addNameRange     '4.7.0',
+253 silly addNameRange     '4.8.0',
+253 silly addNameRange     '4.8.1',
+253 silly addNameRange     '4.8.2',
+253 silly addNameRange     '4.9.0',
+253 silly addNameRange     '4.10.0',
+253 silly addNameRange     '4.11.0',
+253 silly addNameRange     '4.11.1',
+253 silly addNameRange     '4.11.2',
+253 silly addNameRange     '4.12.0',
+253 silly addNameRange     '4.13.0',
+253 silly addNameRange     '4.13.1',
+253 silly addNameRange     '4.14.0',
+253 silly addNameRange     '4.14.1',
+253 silly addNameRange     '4.14.2',
+253 silly addNameRange     '4.15.0',
+253 silly addNameRange     '4.16.0',
+253 silly addNameRange     '4.16.1',
+253 silly addNameRange     '4.16.2',
+253 silly addNameRange     '4.16.3',
+253 silly addNameRange     '4.16.4',
+253 silly addNameRange     '4.16.5',
+253 silly addNameRange     '4.16.6' ] ]
+254 silly addNamed lodash@4.16.6
+255 verbose addNamed "4.16.6" is a plain semver version for lodash
+256 silly mapToRegistry name lodash
+257 silly mapToRegistry using default registry
+258 silly mapToRegistry registry https://registry.npmjs.org/
+259 silly mapToRegistry data Result {
+259 silly mapToRegistry   raw: 'lodash',
+259 silly mapToRegistry   scope: null,
+259 silly mapToRegistry   name: 'lodash',
+259 silly mapToRegistry   rawSpec: '',
+259 silly mapToRegistry   spec: 'latest',
+259 silly mapToRegistry   type: 'tag' }
+260 silly mapToRegistry uri https://registry.npmjs.org/lodash
+261 verbose addRemoteTarball https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz not in flight; adding
+262 verbose addRemoteTarball [ 'https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz',
+262 verbose addRemoteTarball   'd22c9ac660288f3843e16ba7d2b5d06cca27d777' ]
+263 info retry fetch attempt 1 at 5:32:04 PM
+264 info attempt registry request try #1 at 5:32:04 PM
+265 http fetch GET https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz
+266 silly cache afterAdd loose-envify@1.3.0
+267 verbose afterAdd /home/ubuntu/.npm/loose-envify/1.3.0/package/package.json not in flight; writing
+268 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+269 verbose afterAdd /home/ubuntu/.npm/loose-envify/1.3.0/package/package.json written
+270 http fetch 200 https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz
+271 silly fetchAndShaCheck shasum d22c9ac660288f3843e16ba7d2b5d06cca27d777
+272 verbose addTmpTarball /tmp/npm-3317-df83c0c3/registry.npmjs.org/lodash/-/lodash-4.16.6.tgz not in flight; adding
+273 verbose addTmpTarball already have metadata; skipping unpack for lodash@4.16.6
+274 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+275 silly cache afterAdd lodash@4.16.6
+276 verbose afterAdd /home/ubuntu/.npm/lodash/4.16.6/package/package.json not in flight; writing
+277 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+278 verbose afterAdd /home/ubuntu/.npm/lodash/4.16.6/package/package.json written
+279 silly install resolved [ { name: 'hoist-non-react-statics',
+279 silly install resolved     version: '1.2.0',
+279 silly install resolved     description: 'Copies non-react specific statics from a child component to a parent component',
+279 silly install resolved     main: 'index.js',
+279 silly install resolved     repository:
+279 silly install resolved      { type: 'git',
+279 silly install resolved        url: 'git://github.com/mridgway/hoist-non-react-statics.git' },
+279 silly install resolved     scripts:
+279 silly install resolved      { cover: 'node node_modules/istanbul/lib/cli.js cover --dir artifacts -- ./node_modules/mocha/bin/_mocha tests/unit/ --recursive --compilers js:babel/register --reporter spec',
+279 silly install resolved        lint: 'eslint ./index.js',
+279 silly install resolved        test: 'mocha tests/unit/ --recursive --compilers js:babel/register --reporter spec' },
+279 silly install resolved     author: { name: 'Michael Ridgway', email: 'mridgway@yahoo-inc.com' },
+279 silly install resolved     licenses: [ [Object] ],
+279 silly install resolved     devDependencies:
+279 silly install resolved      { babel: '^5.0.7',
+279 silly install resolved        'babel-eslint': '^3.0.1',
+279 silly install resolved        chai: '^3.0.0',
+279 silly install resolved        coveralls: '^2.11.1',
+279 silly install resolved        eslint: '^0.21.0',
+279 silly install resolved        istanbul: '^0.3.2',
+279 silly install resolved        mocha: '^2.0.1',
+279 silly install resolved        'pre-commit': '^1.0.7',
+279 silly install resolved        react: '^15.0.0' },
+279 silly install resolved     keywords: [ 'react' ],
+279 silly install resolved     gitHead: '437bebb16842657310b6a80ee89fce34864509bd',
+279 silly install resolved     bugs: { url: 'https://github.com/mridgway/hoist-non-react-statics/issues' },
+279 silly install resolved     homepage: 'https://github.com/mridgway/hoist-non-react-statics#readme',
+279 silly install resolved     _id: 'hoist-non-react-statics@1.2.0',
+279 silly install resolved     _shasum: 'aa448cf0986d55cc40773b17174b7dd066cb7cfb',
+279 silly install resolved     _from: 'hoist-non-react-statics@>=1.0.3 <2.0.0',
+279 silly install resolved     _npmVersion: '3.9.3',
+279 silly install resolved     _nodeVersion: '6.2.1',
+279 silly install resolved     _npmUser: { name: 'mridgway', email: 'mcridgway@gmail.com' },
+279 silly install resolved     maintainers: [ [Object] ],
+279 silly install resolved     dist:
+279 silly install resolved      { shasum: 'aa448cf0986d55cc40773b17174b7dd066cb7cfb',
+279 silly install resolved        tarball: 'https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz' },
+279 silly install resolved     _npmOperationalInternal:
+279 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+279 silly install resolved        tmp: 'tmp/hoist-non-react-statics-1.2.0.tgz_1466185955248_0.8610786439385265' },
+279 silly install resolved     directories: {},
+279 silly install resolved     _resolved: 'https://registry.npmjs.org/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz' },
+279 silly install resolved   { name: 'invariant',
+279 silly install resolved     version: '2.2.1',
+279 silly install resolved     description: 'invariant',
+279 silly install resolved     keywords: [ 'test' ],
+279 silly install resolved     license: 'BSD-3-Clause',
+279 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+279 silly install resolved     files: [ 'invariant.js', 'browser.js' ],
+279 silly install resolved     repository:
+279 silly install resolved      { type: 'git',
+279 silly install resolved        url: 'git+https://github.com/zertosh/invariant.git' },
+279 silly install resolved     scripts: { test: 'NODE_ENV=production tap test/*.js && NODE_ENV=development tap test/*.js' },
+279 silly install resolved     dependencies: { 'loose-envify': '^1.0.0' },
+279 silly install resolved     devDependencies: { browserify: '^11.0.1', tap: '^1.4.0' },
+279 silly install resolved     main: 'invariant.js',
+279 silly install resolved     browser: 'browser.js',
+279 silly install resolved     browserify: { transform: [Object] },
+279 silly install resolved     gitHead: '594d6cbcde933a7bd3ecd76a7c4f19892a95e0de',
+279 silly install resolved     bugs: { url: 'https://github.com/zertosh/invariant/issues' },
+279 silly install resolved     homepage: 'https://github.com/zertosh/invariant#readme',
+279 silly install resolved     _id: 'invariant@2.2.1',
+279 silly install resolved     _shasum: 'b097010547668c7e337028ebe816ebe36c8a8d54',
+279 silly install resolved     _from: 'invariant@>=2.0.0 <3.0.0',
+279 silly install resolved     _npmVersion: '2.14.4',
+279 silly install resolved     _nodeVersion: '4.1.1',
+279 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+279 silly install resolved     dist:
+279 silly install resolved      { shasum: 'b097010547668c7e337028ebe816ebe36c8a8d54',
+279 silly install resolved        tarball: 'https://registry.npmjs.org/invariant/-/invariant-2.2.1.tgz' },
+279 silly install resolved     maintainers: [ [Object], [Object] ],
+279 silly install resolved     _npmOperationalInternal:
+279 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+279 silly install resolved        tmp: 'tmp/invariant-2.2.1.tgz_1457504319192_0.7920392917003483' },
+279 silly install resolved     directories: {},
+279 silly install resolved     _resolved: 'https://registry.npmjs.org/invariant/-/invariant-2.2.1.tgz',
+279 silly install resolved     readme: 'ERROR: No README data found!' },
+279 silly install resolved   { name: 'loose-envify',
+279 silly install resolved     version: '1.3.0',
+279 silly install resolved     description: 'Fast (and loose) selective `process.env` replacer using js-tokens instead of an AST',
+279 silly install resolved     keywords:
+279 silly install resolved      [ 'environment',
+279 silly install resolved        'variables',
+279 silly install resolved        'browserify',
+279 silly install resolved        'browserify-transform',
+279 silly install resolved        'transform',
+279 silly install resolved        'source',
+279 silly install resolved        'configuration' ],
+279 silly install resolved     homepage: 'https://github.com/zertosh/loose-envify',
+279 silly install resolved     license: 'MIT',
+279 silly install resolved     author: { name: 'Andres Suarez', email: 'zertosh@gmail.com' },
+279 silly install resolved     main: 'index.js',
+279 silly install resolved     bin: { 'loose-envify': 'cli.js' },
+279 silly install resolved     repository:
+279 silly install resolved      { type: 'git',
+279 silly install resolved        url: 'git://github.com/zertosh/loose-envify.git' },
+279 silly install resolved     scripts: { test: 'tap test/*.js' },
+279 silly install resolved     dependencies: { 'js-tokens': '^2.0.0' },
+279 silly install resolved     devDependencies: { browserify: '^13.1.1', envify: '^3.4.0', tap: '^8.0.0' },
+279 silly install resolved     gitHead: '11c1714ff0f25b6046c38eedd909f2ae9fa12446',
+279 silly install resolved     bugs: { url: 'https://github.com/zertosh/loose-envify/issues' },
+279 silly install resolved     _id: 'loose-envify@1.3.0',
+279 silly install resolved     _shasum: '6b26248c42f6d4fa4b0d8542f78edfcde35642a8',
+279 silly install resolved     _from: 'loose-envify@>=1.1.0 <2.0.0',
+279 silly install resolved     _npmVersion: '3.10.8',
+279 silly install resolved     _nodeVersion: '7.0.0',
+279 silly install resolved     _npmUser: { name: 'zertosh', email: 'zertosh@gmail.com' },
+279 silly install resolved     dist:
+279 silly install resolved      { shasum: '6b26248c42f6d4fa4b0d8542f78edfcde35642a8',
+279 silly install resolved        tarball: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz' },
+279 silly install resolved     maintainers: [ [Object] ],
+279 silly install resolved     _npmOperationalInternal:
+279 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+279 silly install resolved        tmp: 'tmp/loose-envify-1.3.0.tgz_1477683270638_0.3732579650823027' },
+279 silly install resolved     directories: {},
+279 silly install resolved     _resolved: 'https://registry.npmjs.org/loose-envify/-/loose-envify-1.3.0.tgz' },
+279 silly install resolved   { name: 'lodash',
+279 silly install resolved     version: '4.16.6',
+279 silly install resolved     description: 'Lodash modular utilities.',
+279 silly install resolved     keywords: [ 'modules', 'stdlib', 'util' ],
+279 silly install resolved     homepage: 'https://lodash.com/',
+279 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+279 silly install resolved     icon: 'https://lodash.com/icon.svg',
+279 silly install resolved     license: 'MIT',
+279 silly install resolved     main: 'lodash.js',
+279 silly install resolved     author:
+279 silly install resolved      { name: 'John-David Dalton',
+279 silly install resolved        email: 'john.david.dalton@gmail.com',
+279 silly install resolved        url: 'http://allyoucanleet.com/' },
+279 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+279 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+279 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+279 silly install resolved     _id: 'lodash@4.16.6',
+279 silly install resolved     _shasum: 'd22c9ac660288f3843e16ba7d2b5d06cca27d777',
+279 silly install resolved     _from: 'lodash@>=4.2.0 <5.0.0',
+279 silly install resolved     _npmVersion: '2.15.11',
+279 silly install resolved     _nodeVersion: '7.0.0',
+279 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+279 silly install resolved     dist:
+279 silly install resolved      { shasum: 'd22c9ac660288f3843e16ba7d2b5d06cca27d777',
+279 silly install resolved        tarball: 'https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz' },
+279 silly install resolved     maintainers: [ [Object], [Object] ],
+279 silly install resolved     _npmOperationalInternal:
+279 silly install resolved      { host: 'packages-18-east.internal.npmjs.com',
+279 silly install resolved        tmp: 'tmp/lodash-4.16.6.tgz_1477982285913_0.34612850472331047' },
+279 silly install resolved     directories: {},
+279 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash/-/lodash-4.16.6.tgz' } ]
+280 info install hoist-non-react-statics@1.2.0 into /home/ubuntu/workspace/node_modules/react-redux
+281 info install invariant@2.2.1 into /home/ubuntu/workspace/node_modules/react-redux
+282 info install loose-envify@1.3.0 into /home/ubuntu/workspace/node_modules/react-redux
+283 info install lodash@4.16.6 into /home/ubuntu/workspace/node_modules/react-redux
+284 info installOne hoist-non-react-statics@1.2.0
+285 verbose installOne of hoist-non-react-statics to /home/ubuntu/workspace/node_modules/react-redux not in flight; installing
+286 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+287 info installOne invariant@2.2.1
+288 verbose installOne of invariant to /home/ubuntu/workspace/node_modules/react-redux not in flight; installing
+289 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+290 info installOne loose-envify@1.3.0
+291 verbose installOne of loose-envify to /home/ubuntu/workspace/node_modules/react-redux not in flight; installing
+292 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+293 info installOne lodash@4.16.6
+294 verbose installOne of lodash to /home/ubuntu/workspace/node_modules/react-redux not in flight; installing
+295 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+296 verbose lock using /home/ubuntu/.npm/_locks/hoist-non-react-statics-14a7261919b4b707.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+297 verbose lock using /home/ubuntu/.npm/_locks/invariant-09112272868f0e53.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+298 verbose lock using /home/ubuntu/.npm/_locks/loose-envify-1915e2c53e11ec38.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+299 silly install write writing hoist-non-react-statics 1.2.0 to /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+300 silly install write writing invariant 2.2.1 to /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+301 silly install write writing loose-envify 1.3.0 to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+302 verbose lock using /home/ubuntu/.npm/_locks/lodash-d57d0a2f98fd70de.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+303 silly install write writing lodash 4.16.6 to /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+304 verbose unbuild node_modules/react-redux/node_modules/hoist-non-react-statics
+305 verbose unbuild node_modules/react-redux/node_modules/invariant
+306 verbose unbuild node_modules/react-redux/node_modules/loose-envify
+307 verbose unbuild node_modules/react-redux/node_modules/lodash
+308 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics is being purged from base /home/ubuntu/workspace
+309 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+310 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant is being purged from base /home/ubuntu/workspace
+311 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+312 verbose tar unpack /home/ubuntu/.npm/hoist-non-react-statics/1.2.0/package.tgz
+313 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+314 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics is being purged
+315 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+316 verbose tar unpack /home/ubuntu/.npm/invariant/2.2.1/package.tgz
+317 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+318 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant is being purged
+319 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+320 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify is being purged from base /home/ubuntu/workspace
+321 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+322 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash is being purged from base /home/ubuntu/workspace
+323 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+324 silly gunzTarPerm modes [ '755', '644' ]
+325 silly gunzTarPerm modes [ '755', '644' ]
+326 verbose tar unpack /home/ubuntu/.npm/loose-envify/1.3.0/package.tgz
+327 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+328 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify is being purged
+329 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+330 verbose tar unpack /home/ubuntu/.npm/lodash/4.16.6/package.tgz
+331 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+332 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash is being purged
+333 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+334 silly gunzTarPerm modes [ '755', '644' ]
+335 silly gunzTarPerm modes [ '755', '644' ]
+336 silly gunzTarPerm extractEntry package.json
+337 silly gunzTarPerm extractEntry package.json
+338 silly gunzTarPerm extractEntry package.json
+339 silly gunzTarPerm extractEntry package.json
+340 silly gunzTarPerm extractEntry .npmignore
+341 silly gunzTarPerm extractEntry README.md
+342 silly gunzTarPerm extractEntry README.md
+343 silly gunzTarPerm extractEntry browser.js
+344 silly gunzTarPerm extractEntry .npmignore
+345 silly gunzTarPerm extractEntry README.md
+346 silly gunzTarPerm extractEntry README.md
+347 silly gunzTarPerm extractEntry LICENSE
+348 silly gunzTarPerm extractEntry index.js
+349 silly gunzTarPerm extractEntry LICENSE.md
+350 silly gunzTarPerm extractEntry .travis.yml
+351 silly gunzTarPerm extractEntry .eslintrc
+352 silly gunzTarPerm extractEntry .idea/.name
+353 silly gunzTarPerm extractEntry .idea/hoist-non-react-statics.iml
+354 silly gunzTarPerm extractEntry .idea/misc.xml
+355 silly gunzTarPerm extractEntry .idea/modules.xml
+356 silly gunzTarPerm extractEntry .idea/vcs.xml
+357 silly gunzTarPerm extractEntry .idea/workspace.xml
+358 silly gunzTarPerm extractEntry .coveralls.yml
+359 silly gunzTarPerm extractEntry invariant.js
+360 silly gunzTarPerm extractEntry CHANGELOG.md
+361 silly gunzTarPerm extractEntry _LazyWrapper.js
+362 silly gunzTarPerm extractEntry capitalize.js
+363 silly gunzTarPerm extractEntry LICENSE
+364 silly gunzTarPerm extractEntry custom.js
+365 silly gunzTarPerm extractEntry cli.js
+366 silly gunzTarPerm extractEntry index.js
+367 silly gunzTarPerm extractEntry loose-envify.js
+368 silly gunzTarPerm extractEntry replace.js
+369 silly gunzTarPerm extractEntry castArray.js
+370 silly gunzTarPerm extractEntry _DataView.js
+371 silly gunzTarPerm extractEntry camelCase.js
+372 silly gunzTarPerm extractEntry chunk.js
+373 silly gunzTarPerm extractEntry clamp.js
+374 silly gunzTarPerm extractEntry clone.js
+375 silly gunzTarPerm extractEntry cloneDeep.js
+376 silly gunzTarPerm extractEntry cloneDeepWith.js
+377 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant/package.json
+378 silly gunzTarPerm extractEntry bindKey.js
+379 silly gunzTarPerm extractEntry cloneWith.js
+380 info preinstall invariant@2.2.1
+381 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant/package.json
+382 silly gunzTarPerm extractEntry bindAll.js
+383 silly gunzTarPerm extractEntry collection.js
+384 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant/package.json
+385 silly install resolved []
+386 verbose about to build /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+387 info build /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+388 silly gunzTarPerm extractEntry bind.js
+389 silly gunzTarPerm extractEntry commit.js
+390 info linkStuff invariant@2.2.1
+391 silly linkStuff invariant@2.2.1 has /home/ubuntu/workspace/node_modules/react-redux/node_modules as its parent node_modules
+392 silly gunzTarPerm extractEntry before.js
+393 silly gunzTarPerm extractEntry compact.js
+394 verbose linkBins invariant@2.2.1
+395 verbose linkMans invariant@2.2.1
+396 verbose rebuildBundles invariant@2.2.1
+397 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/package.json
+398 info install invariant@2.2.1
+399 info postinstall invariant@2.2.1
+400 info preinstall loose-envify@1.3.0
+401 silly gunzTarPerm extractEntry attempt.js
+402 silly gunzTarPerm extractEntry concat.js
+403 verbose unlock done using /home/ubuntu/.npm/_locks/invariant-09112272868f0e53.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/invariant
+404 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/package.json
+405 silly gunzTarPerm extractEntry at.js
+406 silly gunzTarPerm extractEntry cond.js
+407 silly prepareForInstallMany adding js-tokens@^2.0.0 from loose-envify dependencies
+408 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/package.json
+409 silly gunzTarPerm extractEntry assignWith.js
+410 silly gunzTarPerm extractEntry conforms.js
+411 silly gunzTarPerm extractEntry assignInWith.js
+412 silly gunzTarPerm extractEntry conformsTo.js
+413 silly cache add args [ 'js-tokens@^2.0.0', null ]
+414 verbose cache add spec js-tokens@^2.0.0
+415 silly cache add parsed spec Result {
+415 silly cache add   raw: 'js-tokens@^2.0.0',
+415 silly cache add   scope: null,
+415 silly cache add   name: 'js-tokens',
+415 silly cache add   rawSpec: '^2.0.0',
+415 silly cache add   spec: '>=2.0.0 <3.0.0',
+415 silly cache add   type: 'range' }
+416 silly addNamed js-tokens@>=2.0.0 <3.0.0
+417 verbose addNamed ">=2.0.0 <3.0.0" is a valid semver range for js-tokens
+418 silly addNameRange { name: 'js-tokens', range: '>=2.0.0 <3.0.0', hasData: false }
+419 silly mapToRegistry name js-tokens
+420 silly mapToRegistry using default registry
+421 silly mapToRegistry registry https://registry.npmjs.org/
+422 silly mapToRegistry data Result {
+422 silly mapToRegistry   raw: 'js-tokens',
+422 silly mapToRegistry   scope: null,
+422 silly mapToRegistry   name: 'js-tokens',
+422 silly mapToRegistry   rawSpec: '',
+422 silly mapToRegistry   spec: 'latest',
+422 silly mapToRegistry   type: 'tag' }
+423 silly mapToRegistry uri https://registry.npmjs.org/js-tokens
+424 verbose addNameRange registry:https://registry.npmjs.org/js-tokens not in flight; fetching
+425 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics/package.json
+426 silly gunzTarPerm extractEntry assignIn.js
+427 silly gunzTarPerm extractEntry constant.js
+428 info preinstall hoist-non-react-statics@1.2.0
+429 verbose request uri https://registry.npmjs.org/js-tokens
+430 verbose request no auth needed
+431 info attempt registry request try #1 at 5:32:04 PM
+432 verbose etag "5JCPCS4QDWIATJUNMJHTM0LIF"
+433 http request GET https://registry.npmjs.org/js-tokens
+434 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics/package.json
+435 silly gunzTarPerm extractEntry assign.js
+436 silly gunzTarPerm extractEntry core.js
+437 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics/package.json
+438 silly gunzTarPerm extractEntry ary.js
+439 silly gunzTarPerm extractEntry core.min.js
+440 silly install resolved []
+441 verbose about to build /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+442 info build /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+443 silly gunzTarPerm extractEntry array.js
+444 silly gunzTarPerm extractEntry countBy.js
+445 info linkStuff hoist-non-react-statics@1.2.0
+446 silly linkStuff hoist-non-react-statics@1.2.0 has /home/ubuntu/workspace/node_modules/react-redux/node_modules as its parent node_modules
+447 http 304 https://registry.npmjs.org/js-tokens
+448 verbose headers { date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+448 verbose headers   via: '1.1 varnish',
+448 verbose headers   'cache-control': 'max-age=300',
+448 verbose headers   etag: '"5JCPCS4QDWIATJUNMJHTM0LIF"',
+448 verbose headers   age: '252',
+448 verbose headers   connection: 'keep-alive',
+448 verbose headers   'x-served-by': 'cache-ord1741-ORD',
+448 verbose headers   'x-cache': 'HIT',
+448 verbose headers   'x-cache-hits': '3',
+448 verbose headers   'x-timer': 'S1478885524.486021,VS0,VE0',
+448 verbose headers   vary: 'Accept-Encoding' }
+449 silly get cb [ 304,
+449 silly get   { date: 'Fri, 11 Nov 2016 17:32:04 GMT',
+449 silly get     via: '1.1 varnish',
+449 silly get     'cache-control': 'max-age=300',
+449 silly get     etag: '"5JCPCS4QDWIATJUNMJHTM0LIF"',
+449 silly get     age: '252',
+449 silly get     connection: 'keep-alive',
+449 silly get     'x-served-by': 'cache-ord1741-ORD',
+449 silly get     'x-cache': 'HIT',
+449 silly get     'x-cache-hits': '3',
+449 silly get     'x-timer': 'S1478885524.486021,VS0,VE0',
+449 silly get     vary: 'Accept-Encoding' } ]
+450 verbose etag https://registry.npmjs.org/js-tokens from cache
+451 verbose get saving js-tokens to /home/ubuntu/.npm/registry.npmjs.org/js-tokens/.cache.json
+452 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+453 silly gunzTarPerm extractEntry after.js
+454 silly gunzTarPerm extractEntry create.js
+455 silly addNameRange number 2 { name: 'js-tokens', range: '>=2.0.0 <3.0.0', hasData: true }
+456 silly addNameRange versions [ 'js-tokens',
+456 silly addNameRange   [ '0.1.0',
+456 silly addNameRange     '0.2.0',
+456 silly addNameRange     '0.3.0',
+456 silly addNameRange     '0.3.1',
+456 silly addNameRange     '0.4.0',
+456 silly addNameRange     '0.4.1',
+456 silly addNameRange     '1.0.0',
+456 silly addNameRange     '1.0.1',
+456 silly addNameRange     '1.0.2',
+456 silly addNameRange     '1.0.3',
+456 silly addNameRange     '2.0.0' ] ]
+457 silly addNamed js-tokens@2.0.0
+458 verbose addNamed "2.0.0" is a plain semver version for js-tokens
+459 verbose linkBins hoist-non-react-statics@1.2.0
+460 verbose linkMans hoist-non-react-statics@1.2.0
+461 verbose rebuildBundles hoist-non-react-statics@1.2.0
+462 info install hoist-non-react-statics@1.2.0
+463 silly gunzTarPerm extractEntry add.js
+464 silly gunzTarPerm extractEntry curry.js
+465 info postinstall hoist-non-react-statics@1.2.0
+466 verbose unlock done using /home/ubuntu/.npm/_locks/hoist-non-react-statics-14a7261919b4b707.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/hoist-non-react-statics
+467 silly gunzTarPerm extractEntry _wrapperClone.js
+468 silly gunzTarPerm extractEntry curryRight.js
+469 silly cache afterAdd js-tokens@2.0.0
+470 verbose afterAdd /home/ubuntu/.npm/js-tokens/2.0.0/package/package.json not in flight; writing
+471 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+472 verbose afterAdd /home/ubuntu/.npm/js-tokens/2.0.0/package/package.json written
+473 silly install resolved [ { name: 'js-tokens',
+473 silly install resolved     version: '2.0.0',
+473 silly install resolved     author: { name: 'Simon Lydell' },
+473 silly install resolved     license: 'MIT',
+473 silly install resolved     description: 'A regex that tokenizes JavaScript.',
+473 silly install resolved     keywords: [ 'JavaScript', 'js', 'token', 'tokenize', 'regex' ],
+473 silly install resolved     files: [ 'index.js' ],
+473 silly install resolved     repository:
+473 silly install resolved      { type: 'git',
+473 silly install resolved        url: 'git+https://github.com/lydell/js-tokens.git' },
+473 silly install resolved     scripts:
+473 silly install resolved      { test: 'mocha --ui tdd',
+473 silly install resolved        'esprima-compare': 'node esprima-compare ./index.js everything.js/es5.js',
+473 silly install resolved        build: 'node generate-index.js',
+473 silly install resolved        dev: 'npm run build && npm test' },
+473 silly install resolved     devDependencies:
+473 silly install resolved      { 'coffee-script': '~1.10.0',
+473 silly install resolved        esprima: '^2.7.2',
+473 silly install resolved        'everything.js': '^1.0.3',
+473 silly install resolved        mocha: '^2.5.3' },
+473 silly install resolved     gitHead: '23fcbe4639fb4baee5dc53616958cc04c8b94026',
+473 silly install resolved     bugs: { url: 'https://github.com/lydell/js-tokens/issues' },
+473 silly install resolved     homepage: 'https://github.com/lydell/js-tokens#readme',
+473 silly install resolved     _id: 'js-tokens@2.0.0',
+473 silly install resolved     _shasum: '79903f5563ee778cc1162e6dcf1a0027c97f9cb5',
+473 silly install resolved     _from: 'js-tokens@>=2.0.0 <3.0.0',
+473 silly install resolved     _npmVersion: '3.8.6',
+473 silly install resolved     _nodeVersion: '5.11.1',
+473 silly install resolved     _npmUser: { name: 'lydell', email: 'simon.lydell@gmail.com' },
+473 silly install resolved     dist:
+473 silly install resolved      { shasum: '79903f5563ee778cc1162e6dcf1a0027c97f9cb5',
+473 silly install resolved        tarball: 'https://registry.npmjs.org/js-tokens/-/js-tokens-2.0.0.tgz' },
+473 silly install resolved     maintainers: [ [Object] ],
+473 silly install resolved     _npmOperationalInternal:
+473 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+473 silly install resolved        tmp: 'tmp/js-tokens-2.0.0.tgz_1466321890449_0.1510669116396457' },
+473 silly install resolved     directories: {},
+473 silly install resolved     _resolved: 'https://registry.npmjs.org/js-tokens/-/js-tokens-2.0.0.tgz',
+473 silly install resolved     readme: 'ERROR: No README data found!' } ]
+474 info install js-tokens@2.0.0 into /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+475 info installOne js-tokens@2.0.0
+476 verbose installOne of js-tokens to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify not in flight; installing
+477 verbose correctMkdir /home/ubuntu/.npm/_locks correctMkdir not in flight; initializing
+478 silly gunzTarPerm extractEntry _updateWrapDetails.js
+479 silly gunzTarPerm extractEntry date.js
+480 verbose lock using /home/ubuntu/.npm/_locks/js-tokens-c90c3d97d60e27c6.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+481 silly install write writing js-tokens 2.0.0 to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+482 verbose unbuild node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+483 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens is being purged from base /home/ubuntu/workspace
+484 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+485 silly gunzTarPerm extractEntry _unicodeWords.js
+486 silly gunzTarPerm extractEntry debounce.js
+487 verbose tar unpack /home/ubuntu/.npm/js-tokens/2.0.0/package.tgz
+488 verbose tar unpacking to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+489 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens is being purged
+490 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+491 silly gunzTarPerm modes [ '755', '644' ]
+492 silly gunzTarPerm extractEntry _unicodeToArray.js
+493 silly gunzTarPerm extractEntry deburr.js
+494 silly gunzTarPerm extractEntry package.json
+495 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+496 silly gunzTarPerm extractEntry LICENSE
+497 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+498 silly gunzTarPerm extractEntry index.js
+499 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+500 silly gunzTarPerm extractEntry _unicodeSize.js
+501 silly gunzTarPerm extractEntry defaultTo.js
+502 silly gunzTarPerm extractEntry changelog.md
+503 silly gunzTarPerm modified mode [ 'changelog.md', 436, 420 ]
+504 silly gunzTarPerm extractEntry readme.md
+505 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+506 silly gunzTarPerm extractEntry _unescapeHtmlChar.js
+507 silly gunzTarPerm extractEntry defaults.js
+508 silly gunzTarPerm extractEntry _toSource.js
+509 silly gunzTarPerm extractEntry defaultsDeep.js
+510 silly gunzTarPerm extractEntry _toKey.js
+511 silly gunzTarPerm extractEntry defer.js
+512 silly gunzTarPerm extractEntry _stringToPath.js
+513 silly gunzTarPerm extractEntry delay.js
+514 silly gunzTarPerm extractEntry _stringToArray.js
+515 silly gunzTarPerm extractEntry difference.js
+516 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens/package.json
+517 silly gunzTarPerm extractEntry _stringSize.js
+518 silly gunzTarPerm extractEntry differenceBy.js
+519 info preinstall js-tokens@2.0.0
+520 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens/package.json
+521 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens/package.json
+522 silly gunzTarPerm extractEntry _strictLastIndexOf.js
+523 silly gunzTarPerm extractEntry differenceWith.js
+524 silly install resolved []
+525 verbose about to build /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+526 info build /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+527 silly gunzTarPerm extractEntry _strictIndexOf.js
+528 silly gunzTarPerm extractEntry divide.js
+529 silly gunzTarPerm extractEntry _stackSet.js
+530 info linkStuff js-tokens@2.0.0
+531 silly linkStuff js-tokens@2.0.0 has /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules as its parent node_modules
+532 silly gunzTarPerm extractEntry drop.js
+533 silly gunzTarPerm extractEntry _stackHas.js
+534 silly gunzTarPerm extractEntry dropRight.js
+535 silly gunzTarPerm extractEntry _stackGet.js
+536 silly gunzTarPerm extractEntry dropRightWhile.js
+537 verbose linkBins js-tokens@2.0.0
+538 verbose linkMans js-tokens@2.0.0
+539 verbose rebuildBundles js-tokens@2.0.0
+540 silly gunzTarPerm extractEntry _stackDelete.js
+541 info install js-tokens@2.0.0
+542 info postinstall js-tokens@2.0.0
+543 verbose unlock done using /home/ubuntu/.npm/_locks/js-tokens-c90c3d97d60e27c6.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify/node_modules/js-tokens
+544 verbose about to build /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+545 info build /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+546 silly gunzTarPerm extractEntry dropWhile.js
+547 silly gunzTarPerm extractEntry _stackClear.js
+548 info linkStuff loose-envify@1.3.0
+549 silly linkStuff loose-envify@1.3.0 has /home/ubuntu/workspace/node_modules/react-redux/node_modules as its parent node_modules
+550 silly gunzTarPerm extractEntry each.js
+551 silly gunzTarPerm extractEntry _shuffleSelf.js
+552 verbose linkBins loose-envify@1.3.0
+553 verbose link bins [ { 'loose-envify': 'cli.js' },
+553 verbose link bins   '/home/ubuntu/workspace/node_modules/react-redux/node_modules/.bin',
+553 verbose link bins   false ]
+554 verbose linkMans loose-envify@1.3.0
+555 verbose rebuildBundles loose-envify@1.3.0
+556 verbose rebuildBundles [ 'js-tokens' ]
+557 silly gentlyRm /home/ubuntu/workspace/node_modules/react-redux/node_modules/.bin/loose-envify is being purged
+558 verbose gentlyRm don't care about contents; nuking /home/ubuntu/workspace/node_modules/react-redux/node_modules/.bin/loose-envify
+559 silly gunzTarPerm extractEntry eachRight.js
+560 silly gunzTarPerm extractEntry _shortOut.js
+561 silly gunzTarPerm extractEntry endsWith.js
+562 silly gunzTarPerm extractEntry _setWrapToString.js
+563 info install loose-envify@1.3.0
+564 silly gunzTarPerm extractEntry entries.js
+565 silly gunzTarPerm extractEntry _setToString.js
+566 info postinstall loose-envify@1.3.0
+567 verbose unlock done using /home/ubuntu/.npm/_locks/loose-envify-1915e2c53e11ec38.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/loose-envify
+568 silly gunzTarPerm extractEntry entriesIn.js
+569 silly gunzTarPerm extractEntry _setToPairs.js
+570 silly gunzTarPerm extractEntry eq.js
+571 silly gunzTarPerm extractEntry _setToArray.js
+572 silly gunzTarPerm extractEntry escape.js
+573 silly gunzTarPerm extractEntry _setData.js
+574 silly gunzTarPerm extractEntry escapeRegExp.js
+575 silly gunzTarPerm extractEntry _setCacheHas.js
+576 silly gunzTarPerm extractEntry every.js
+577 silly gunzTarPerm extractEntry _setCacheAdd.js
+578 silly gunzTarPerm extractEntry extend.js
+579 silly gunzTarPerm extractEntry _root.js
+580 silly gunzTarPerm extractEntry extendWith.js
+581 silly gunzTarPerm extractEntry _replaceHolders.js
+582 silly gunzTarPerm extractEntry fill.js
+583 silly gunzTarPerm extractEntry _reorder.js
+584 silly gunzTarPerm extractEntry filter.js
+585 silly gunzTarPerm extractEntry _realNames.js
+586 silly gunzTarPerm extractEntry find.js
+587 silly gunzTarPerm extractEntry _reInterpolate.js
+588 silly gunzTarPerm extractEntry findIndex.js
+589 silly gunzTarPerm extractEntry _reEvaluate.js
+590 silly gunzTarPerm extractEntry findKey.js
+591 silly gunzTarPerm extractEntry _reEscape.js
+592 silly gunzTarPerm extractEntry findLast.js
+593 silly gunzTarPerm extractEntry _parent.js
+594 silly gunzTarPerm extractEntry findLastIndex.js
+595 silly gunzTarPerm extractEntry _overRest.js
+596 silly gunzTarPerm extractEntry findLastKey.js
+597 silly gunzTarPerm extractEntry _overArg.js
+598 silly gunzTarPerm extractEntry first.js
+599 silly gunzTarPerm extractEntry _objectToString.js
+600 silly gunzTarPerm extractEntry flatMap.js
+601 silly gunzTarPerm extractEntry _nodeUtil.js
+602 silly gunzTarPerm extractEntry flatMapDeep.js
+603 silly gunzTarPerm extractEntry _nativeKeysIn.js
+604 silly gunzTarPerm extractEntry flatMapDepth.js
+605 silly gunzTarPerm extractEntry _nativeKeys.js
+606 silly gunzTarPerm extractEntry flatten.js
+607 silly gunzTarPerm extractEntry _nativeCreate.js
+608 silly gunzTarPerm extractEntry flattenDeep.js
+609 silly gunzTarPerm extractEntry _metaMap.js
+610 silly gunzTarPerm extractEntry flattenDepth.js
+611 silly gunzTarPerm extractEntry _mergeDefaults.js
+612 silly gunzTarPerm extractEntry flip.js
+613 silly gunzTarPerm extractEntry _mergeData.js
+614 silly gunzTarPerm extractEntry floor.js
+615 silly gunzTarPerm extractEntry _memoizeCapped.js
+616 silly gunzTarPerm extractEntry flow.js
+617 silly gunzTarPerm extractEntry _matchesStrictComparable.js
+618 silly gunzTarPerm extractEntry flowRight.js
+619 silly gunzTarPerm extractEntry _mapToArray.js
+620 silly gunzTarPerm extractEntry forEach.js
+621 silly gunzTarPerm extractEntry _mapCacheSet.js
+622 silly gunzTarPerm extractEntry forEachRight.js
+623 silly gunzTarPerm extractEntry _mapCacheHas.js
+624 silly gunzTarPerm extractEntry forIn.js
+625 silly gunzTarPerm extractEntry _mapCacheGet.js
+626 silly gunzTarPerm extractEntry forInRight.js
+627 silly gunzTarPerm extractEntry _mapCacheDelete.js
+628 silly gunzTarPerm extractEntry forOwn.js
+629 silly gunzTarPerm extractEntry _mapCacheClear.js
+630 silly gunzTarPerm extractEntry forOwnRight.js
+631 silly gunzTarPerm extractEntry _listCacheSet.js
+632 silly gunzTarPerm extractEntry zipObjectDeep.js
+633 silly gunzTarPerm extractEntry _listCacheHas.js
+634 silly gunzTarPerm extractEntry fp.js
+635 silly gunzTarPerm extractEntry _listCacheGet.js
+636 silly gunzTarPerm extractEntry fromPairs.js
+637 silly gunzTarPerm extractEntry _listCacheDelete.js
+638 silly gunzTarPerm extractEntry function.js
+639 silly gunzTarPerm extractEntry _listCacheClear.js
+640 silly gunzTarPerm extractEntry functions.js
+641 silly gunzTarPerm extractEntry _lazyValue.js
+642 silly gunzTarPerm extractEntry functionsIn.js
+643 silly gunzTarPerm extractEntry _lazyReverse.js
+644 silly gunzTarPerm extractEntry get.js
+645 silly gunzTarPerm extractEntry _lazyClone.js
+646 silly gunzTarPerm extractEntry groupBy.js
+647 silly gunzTarPerm extractEntry _iteratorToArray.js
+648 silly gunzTarPerm extractEntry gt.js
+649 silly gunzTarPerm extractEntry _isStrictComparable.js
+650 silly gunzTarPerm extractEntry gte.js
+651 silly gunzTarPerm extractEntry _isPrototype.js
+652 silly gunzTarPerm extractEntry has.js
+653 silly gunzTarPerm extractEntry _isMasked.js
+654 silly gunzTarPerm extractEntry hasIn.js
+655 silly gunzTarPerm extractEntry _isMaskable.js
+656 silly gunzTarPerm extractEntry head.js
+657 silly gunzTarPerm extractEntry _isLaziable.js
+658 silly gunzTarPerm extractEntry identity.js
+659 silly gunzTarPerm extractEntry _isKeyable.js
+660 silly gunzTarPerm extractEntry inRange.js
+661 silly gunzTarPerm extractEntry _isKey.js
+662 silly gunzTarPerm extractEntry includes.js
+663 silly gunzTarPerm extractEntry _isIterateeCall.js
+664 silly gunzTarPerm extractEntry index.js
+665 silly gunzTarPerm extractEntry _isIndex.js
+666 silly gunzTarPerm extractEntry indexOf.js
+667 silly gunzTarPerm extractEntry _isFlattenable.js
+668 silly gunzTarPerm extractEntry initial.js
+669 silly gunzTarPerm extractEntry _insertWrapDetails.js
+670 silly gunzTarPerm extractEntry intersection.js
+671 silly gunzTarPerm extractEntry _initCloneObject.js
+672 silly gunzTarPerm extractEntry intersectionBy.js
+673 silly gunzTarPerm extractEntry _initCloneByTag.js
+674 silly gunzTarPerm extractEntry intersectionWith.js
+675 silly gunzTarPerm extractEntry _initCloneArray.js
+676 silly gunzTarPerm extractEntry invert.js
+677 silly gunzTarPerm extractEntry _hashSet.js
+678 silly gunzTarPerm extractEntry invertBy.js
+679 silly gunzTarPerm extractEntry _hashHas.js
+680 silly gunzTarPerm extractEntry invoke.js
+681 silly gunzTarPerm extractEntry _hashGet.js
+682 silly gunzTarPerm extractEntry invokeMap.js
+683 silly gunzTarPerm extractEntry _hashDelete.js
+684 silly gunzTarPerm extractEntry isArguments.js
+685 silly gunzTarPerm extractEntry _hashClear.js
+686 silly gunzTarPerm extractEntry isArray.js
+687 silly gunzTarPerm extractEntry _hasUnicodeWord.js
+688 silly gunzTarPerm extractEntry isArrayBuffer.js
+689 silly gunzTarPerm extractEntry _hasUnicode.js
+690 silly gunzTarPerm extractEntry isArrayLike.js
+691 silly gunzTarPerm extractEntry _hasPath.js
+692 silly gunzTarPerm extractEntry isArrayLikeObject.js
+693 silly gunzTarPerm extractEntry _getWrapDetails.js
+694 silly gunzTarPerm extractEntry isBoolean.js
+695 silly gunzTarPerm extractEntry _getView.js
+696 silly gunzTarPerm extractEntry isBuffer.js
+697 silly gunzTarPerm extractEntry _getValue.js
+698 silly gunzTarPerm extractEntry isDate.js
+699 silly gunzTarPerm extractEntry _getTag.js
+700 silly gunzTarPerm extractEntry isElement.js
+701 silly gunzTarPerm extractEntry _getSymbolsIn.js
+702 silly gunzTarPerm extractEntry isEmpty.js
+703 silly gunzTarPerm extractEntry _getSymbols.js
+704 silly gunzTarPerm extractEntry isEqual.js
+705 silly gunzTarPerm extractEntry _getRawTag.js
+706 silly gunzTarPerm extractEntry isEqualWith.js
+707 silly gunzTarPerm extractEntry _getPrototype.js
+708 silly gunzTarPerm extractEntry isError.js
+709 silly gunzTarPerm extractEntry _getNative.js
+710 silly gunzTarPerm extractEntry isFinite.js
+711 silly gunzTarPerm extractEntry _getMatchData.js
+712 silly gunzTarPerm extractEntry isFunction.js
+713 silly gunzTarPerm extractEntry _getMapData.js
+714 silly gunzTarPerm extractEntry isInteger.js
+715 silly gunzTarPerm extractEntry _getHolder.js
+716 silly gunzTarPerm extractEntry isLength.js
+717 silly gunzTarPerm extractEntry _getFuncName.js
+718 silly gunzTarPerm extractEntry isMap.js
+719 silly gunzTarPerm extractEntry _getData.js
+720 silly gunzTarPerm extractEntry isMatch.js
+721 silly gunzTarPerm extractEntry _getAllKeysIn.js
+722 silly gunzTarPerm extractEntry isMatchWith.js
+723 silly gunzTarPerm extractEntry _getAllKeys.js
+724 silly gunzTarPerm extractEntry isNaN.js
+725 silly gunzTarPerm extractEntry _freeGlobal.js
+726 silly gunzTarPerm extractEntry isNative.js
+727 silly gunzTarPerm extractEntry _flatRest.js
+728 silly gunzTarPerm extractEntry isNil.js
+729 silly gunzTarPerm extractEntry _escapeStringChar.js
+730 silly gunzTarPerm extractEntry isNull.js
+731 silly gunzTarPerm extractEntry _escapeHtmlChar.js
+732 silly gunzTarPerm extractEntry isNumber.js
+733 silly gunzTarPerm extractEntry _equalObjects.js
+734 silly gunzTarPerm extractEntry isObject.js
+735 silly gunzTarPerm extractEntry _equalByTag.js
+736 silly gunzTarPerm extractEntry isObjectLike.js
+737 silly gunzTarPerm extractEntry _equalArrays.js
+738 silly gunzTarPerm extractEntry isPlainObject.js
+739 silly gunzTarPerm extractEntry _defineProperty.js
+740 silly gunzTarPerm extractEntry isRegExp.js
+741 silly gunzTarPerm extractEntry _deburrLetter.js
+742 silly gunzTarPerm extractEntry isSafeInteger.js
+743 silly gunzTarPerm extractEntry _createWrap.js
+744 silly gunzTarPerm extractEntry isSet.js
+745 silly gunzTarPerm extractEntry _createToPairs.js
+746 silly gunzTarPerm extractEntry isString.js
+747 silly gunzTarPerm extractEntry _createSet.js
+748 silly gunzTarPerm extractEntry isSymbol.js
+749 silly gunzTarPerm extractEntry _createRound.js
+750 silly gunzTarPerm extractEntry isTypedArray.js
+751 silly gunzTarPerm extractEntry _createRelationalOperation.js
+752 silly gunzTarPerm extractEntry isUndefined.js
+753 silly gunzTarPerm extractEntry _createRecurry.js
+754 silly gunzTarPerm extractEntry isWeakMap.js
+755 silly gunzTarPerm extractEntry _createRange.js
+756 silly gunzTarPerm extractEntry isWeakSet.js
+757 silly gunzTarPerm extractEntry _createPartial.js
+758 silly gunzTarPerm extractEntry iteratee.js
+759 silly gunzTarPerm extractEntry _createPadding.js
+760 silly gunzTarPerm extractEntry join.js
+761 silly gunzTarPerm extractEntry _createOver.js
+762 silly gunzTarPerm extractEntry kebabCase.js
+763 silly gunzTarPerm extractEntry _createMathOperation.js
+764 silly gunzTarPerm extractEntry keyBy.js
+765 silly gunzTarPerm extractEntry _createInverter.js
+766 silly gunzTarPerm extractEntry keys.js
+767 silly gunzTarPerm extractEntry _createHybrid.js
+768 silly gunzTarPerm extractEntry keysIn.js
+769 silly gunzTarPerm extractEntry _createFlow.js
+770 silly gunzTarPerm extractEntry lang.js
+771 silly gunzTarPerm extractEntry _createFind.js
+772 silly gunzTarPerm extractEntry last.js
+773 silly gunzTarPerm extractEntry _createCurry.js
+774 silly gunzTarPerm extractEntry lastIndexOf.js
+775 silly gunzTarPerm extractEntry _createCtor.js
+776 silly gunzTarPerm extractEntry lodash.js
+777 silly gunzTarPerm extractEntry _createCompounder.js
+778 silly gunzTarPerm extractEntry lodash.min.js
+779 silly gunzTarPerm extractEntry _createCaseFirst.js
+780 silly gunzTarPerm extractEntry lowerCase.js
+781 silly gunzTarPerm extractEntry _createBind.js
+782 silly gunzTarPerm extractEntry lowerFirst.js
+783 silly gunzTarPerm extractEntry _createBaseFor.js
+784 silly gunzTarPerm extractEntry lt.js
+785 silly gunzTarPerm extractEntry _createBaseEach.js
+786 silly gunzTarPerm extractEntry lte.js
+787 silly gunzTarPerm extractEntry _createAssigner.js
+788 silly gunzTarPerm extractEntry map.js
+789 silly gunzTarPerm extractEntry _createAggregator.js
+790 silly gunzTarPerm extractEntry mapKeys.js
+791 silly gunzTarPerm extractEntry _countHolders.js
+792 silly gunzTarPerm extractEntry mapValues.js
+793 silly gunzTarPerm extractEntry _coreJsData.js
+794 silly gunzTarPerm extractEntry matches.js
+795 silly gunzTarPerm extractEntry _copySymbols.js
+796 silly gunzTarPerm extractEntry matchesProperty.js
+797 silly gunzTarPerm extractEntry _copyObject.js
+798 silly gunzTarPerm extractEntry math.js
+799 silly gunzTarPerm extractEntry _copyArray.js
+800 silly gunzTarPerm extractEntry max.js
+801 silly gunzTarPerm extractEntry _composeArgsRight.js
+802 silly gunzTarPerm extractEntry maxBy.js
+803 silly gunzTarPerm extractEntry _composeArgs.js
+804 silly gunzTarPerm extractEntry mean.js
+805 silly gunzTarPerm extractEntry _compareMultiple.js
+806 silly gunzTarPerm extractEntry meanBy.js
+807 silly gunzTarPerm extractEntry _compareAscending.js
+808 silly gunzTarPerm extractEntry memoize.js
+809 silly gunzTarPerm extractEntry _cloneTypedArray.js
+810 silly gunzTarPerm extractEntry merge.js
+811 silly gunzTarPerm extractEntry _cloneSymbol.js
+812 silly gunzTarPerm extractEntry mergeWith.js
+813 silly gunzTarPerm extractEntry _cloneSet.js
+814 silly gunzTarPerm extractEntry method.js
+815 silly gunzTarPerm extractEntry _cloneRegExp.js
+816 silly gunzTarPerm extractEntry methodOf.js
+817 silly gunzTarPerm extractEntry _cloneMap.js
+818 silly gunzTarPerm extractEntry min.js
+819 silly gunzTarPerm extractEntry _cloneDataView.js
+820 silly gunzTarPerm extractEntry minBy.js
+821 silly gunzTarPerm extractEntry _cloneBuffer.js
+822 silly gunzTarPerm extractEntry mixin.js
+823 silly gunzTarPerm extractEntry _cloneArrayBuffer.js
+824 silly gunzTarPerm extractEntry multiply.js
+825 silly gunzTarPerm extractEntry _charsStartIndex.js
+826 silly gunzTarPerm extractEntry negate.js
+827 silly gunzTarPerm extractEntry _charsEndIndex.js
+828 silly gunzTarPerm extractEntry next.js
+829 silly gunzTarPerm extractEntry _castSlice.js
+830 silly gunzTarPerm extractEntry noop.js
+831 silly gunzTarPerm extractEntry _castRest.js
+832 silly gunzTarPerm extractEntry now.js
+833 silly gunzTarPerm extractEntry _castPath.js
+834 silly gunzTarPerm extractEntry nth.js
+835 silly gunzTarPerm extractEntry _castFunction.js
+836 silly gunzTarPerm extractEntry nthArg.js
+837 silly gunzTarPerm extractEntry _castArrayLikeObject.js
+838 silly gunzTarPerm extractEntry number.js
+839 silly gunzTarPerm extractEntry _cacheHas.js
+840 silly gunzTarPerm extractEntry object.js
+841 silly gunzTarPerm extractEntry _baseZipObject.js
+842 silly gunzTarPerm extractEntry omit.js
+843 silly gunzTarPerm extractEntry _baseXor.js
+844 silly gunzTarPerm extractEntry omitBy.js
+845 silly gunzTarPerm extractEntry _baseWrapperValue.js
+846 silly gunzTarPerm extractEntry once.js
+847 silly gunzTarPerm extractEntry _baseWhile.js
+848 silly gunzTarPerm extractEntry orderBy.js
+849 silly gunzTarPerm extractEntry _baseValues.js
+850 silly gunzTarPerm extractEntry over.js
+851 silly gunzTarPerm extractEntry _baseUpdate.js
+852 silly gunzTarPerm extractEntry overArgs.js
+853 silly gunzTarPerm extractEntry _baseUnset.js
+854 silly gunzTarPerm extractEntry overEvery.js
+855 silly gunzTarPerm extractEntry _baseUniq.js
+856 silly gunzTarPerm extractEntry overSome.js
+857 silly gunzTarPerm extractEntry _baseUnary.js
+858 silly gunzTarPerm extractEntry _Hash.js
+859 silly gunzTarPerm extractEntry _baseToString.js
+860 silly gunzTarPerm extractEntry pad.js
+861 silly gunzTarPerm extractEntry _baseToPairs.js
+862 silly gunzTarPerm extractEntry padEnd.js
+863 silly gunzTarPerm extractEntry _baseToNumber.js
+864 silly gunzTarPerm extractEntry padStart.js
+865 silly gunzTarPerm extractEntry _baseTimes.js
+866 silly gunzTarPerm extractEntry parseInt.js
+867 silly gunzTarPerm extractEntry _baseSum.js
+868 silly gunzTarPerm extractEntry partial.js
+869 silly gunzTarPerm extractEntry _baseSortedUniq.js
+870 silly gunzTarPerm extractEntry partialRight.js
+871 silly gunzTarPerm extractEntry _baseSortedIndexBy.js
+872 silly gunzTarPerm extractEntry partition.js
+873 silly gunzTarPerm extractEntry _baseSortedIndex.js
+874 silly gunzTarPerm extractEntry pick.js
+875 silly gunzTarPerm extractEntry _baseSortBy.js
+876 silly gunzTarPerm extractEntry pickBy.js
+877 silly gunzTarPerm extractEntry _baseSome.js
+878 silly gunzTarPerm extractEntry plant.js
+879 silly gunzTarPerm extractEntry _baseSlice.js
+880 silly gunzTarPerm extractEntry property.js
+881 silly gunzTarPerm extractEntry _baseShuffle.js
+882 silly gunzTarPerm extractEntry propertyOf.js
+883 silly gunzTarPerm extractEntry _baseSetToString.js
+884 silly gunzTarPerm extractEntry pull.js
+885 silly gunzTarPerm extractEntry _baseSetData.js
+886 silly gunzTarPerm extractEntry pullAll.js
+887 silly gunzTarPerm extractEntry _baseSet.js
+888 silly gunzTarPerm extractEntry pullAllBy.js
+889 silly gunzTarPerm extractEntry _baseSampleSize.js
+890 silly gunzTarPerm extractEntry pullAllWith.js
+891 silly gunzTarPerm extractEntry _baseSample.js
+892 silly gunzTarPerm extractEntry pullAt.js
+893 silly gunzTarPerm extractEntry _baseRest.js
+894 silly gunzTarPerm extractEntry random.js
+895 silly gunzTarPerm extractEntry _baseRepeat.js
+896 silly gunzTarPerm extractEntry range.js
+897 silly gunzTarPerm extractEntry _baseReduce.js
+898 silly gunzTarPerm extractEntry rangeRight.js
+899 silly gunzTarPerm extractEntry _baseRange.js
+900 silly gunzTarPerm extractEntry rearg.js
+901 silly gunzTarPerm extractEntry _baseRandom.js
+902 silly gunzTarPerm extractEntry reduce.js
+903 silly gunzTarPerm extractEntry _basePullAt.js
+904 silly gunzTarPerm extractEntry reduceRight.js
+905 silly gunzTarPerm extractEntry _basePullAll.js
+906 silly gunzTarPerm extractEntry reject.js
+907 silly gunzTarPerm extractEntry _basePropertyOf.js
+908 silly gunzTarPerm extractEntry remove.js
+909 silly gunzTarPerm extractEntry _basePropertyDeep.js
+910 silly gunzTarPerm extractEntry repeat.js
+911 silly gunzTarPerm extractEntry _baseProperty.js
+912 silly gunzTarPerm extractEntry replace.js
+913 silly gunzTarPerm extractEntry _basePickBy.js
+914 silly gunzTarPerm extractEntry rest.js
+915 silly gunzTarPerm extractEntry _basePick.js
+916 silly gunzTarPerm extractEntry result.js
+917 silly gunzTarPerm extractEntry _baseOrderBy.js
+918 silly gunzTarPerm extractEntry reverse.js
+919 silly gunzTarPerm extractEntry _baseNth.js
+920 silly gunzTarPerm extractEntry round.js
+921 silly gunzTarPerm extractEntry _baseMergeDeep.js
+922 silly gunzTarPerm extractEntry sample.js
+923 silly gunzTarPerm extractEntry _baseMerge.js
+924 silly gunzTarPerm extractEntry sampleSize.js
+925 silly gunzTarPerm extractEntry _baseMean.js
+926 silly gunzTarPerm extractEntry seq.js
+927 silly gunzTarPerm extractEntry _baseMatchesProperty.js
+928 silly gunzTarPerm extractEntry set.js
+929 silly gunzTarPerm extractEntry _baseMatches.js
+930 silly gunzTarPerm extractEntry setWith.js
+931 silly gunzTarPerm extractEntry _baseMap.js
+932 silly gunzTarPerm extractEntry shuffle.js
+933 silly gunzTarPerm extractEntry _baseLt.js
+934 silly gunzTarPerm extractEntry size.js
+935 silly gunzTarPerm extractEntry _baseLodash.js
+936 silly gunzTarPerm extractEntry slice.js
+937 silly gunzTarPerm extractEntry _baseKeysIn.js
+938 silly gunzTarPerm extractEntry snakeCase.js
+939 silly gunzTarPerm extractEntry _baseKeys.js
+940 silly gunzTarPerm extractEntry some.js
+941 silly gunzTarPerm extractEntry _baseIteratee.js
+942 silly gunzTarPerm extractEntry sortBy.js
+943 silly gunzTarPerm extractEntry _baseIsTypedArray.js
+944 silly gunzTarPerm extractEntry sortedIndex.js
+945 silly gunzTarPerm extractEntry _baseIsSet.js
+946 silly gunzTarPerm extractEntry sortedIndexBy.js
+947 silly gunzTarPerm extractEntry _baseIsRegExp.js
+948 silly gunzTarPerm extractEntry sortedIndexOf.js
+949 silly gunzTarPerm extractEntry _baseIsNative.js
+950 silly gunzTarPerm extractEntry sortedLastIndex.js
+951 silly gunzTarPerm extractEntry _baseIsNaN.js
+952 silly gunzTarPerm extractEntry sortedLastIndexBy.js
+953 silly gunzTarPerm extractEntry _baseIsMatch.js
+954 silly gunzTarPerm extractEntry sortedLastIndexOf.js
+955 silly gunzTarPerm extractEntry _baseIsMap.js
+956 silly gunzTarPerm extractEntry sortedUniq.js
+957 silly gunzTarPerm extractEntry _baseIsEqualDeep.js
+958 silly gunzTarPerm extractEntry sortedUniqBy.js
+959 silly gunzTarPerm extractEntry _baseIsEqual.js
+960 silly gunzTarPerm extractEntry split.js
+961 silly gunzTarPerm extractEntry _baseIsDate.js
+962 silly gunzTarPerm extractEntry spread.js
+963 silly gunzTarPerm extractEntry _baseIsArrayBuffer.js
+964 silly gunzTarPerm extractEntry startCase.js
+965 silly gunzTarPerm extractEntry _baseIsArguments.js
+966 silly gunzTarPerm extractEntry startsWith.js
+967 silly gunzTarPerm extractEntry _baseInvoke.js
+968 silly gunzTarPerm extractEntry string.js
+969 silly gunzTarPerm extractEntry _baseInverter.js
+970 silly gunzTarPerm extractEntry stubArray.js
+971 silly gunzTarPerm extractEntry _baseIntersection.js
+972 silly gunzTarPerm extractEntry stubFalse.js
+973 silly gunzTarPerm extractEntry _baseIndexOfWith.js
+974 silly gunzTarPerm extractEntry stubObject.js
+975 silly gunzTarPerm extractEntry _baseIndexOf.js
+976 silly gunzTarPerm extractEntry stubString.js
+977 silly gunzTarPerm extractEntry _baseInRange.js
+978 silly gunzTarPerm extractEntry stubTrue.js
+979 silly gunzTarPerm extractEntry _baseHasIn.js
+980 silly gunzTarPerm extractEntry subtract.js
+981 silly gunzTarPerm extractEntry _baseHas.js
+982 silly gunzTarPerm extractEntry sum.js
+983 silly gunzTarPerm extractEntry _baseGt.js
+984 silly gunzTarPerm extractEntry sumBy.js
+985 silly gunzTarPerm extractEntry _baseGetTag.js
+986 silly gunzTarPerm extractEntry tail.js
+987 silly gunzTarPerm extractEntry _baseGetAllKeys.js
+988 silly gunzTarPerm extractEntry take.js
+989 silly gunzTarPerm extractEntry _baseGet.js
+990 silly gunzTarPerm extractEntry takeRight.js
+991 silly gunzTarPerm extractEntry _baseFunctions.js
+992 silly gunzTarPerm extractEntry takeRightWhile.js
+993 silly gunzTarPerm extractEntry _baseForRight.js
+994 silly gunzTarPerm extractEntry takeWhile.js
+995 silly gunzTarPerm extractEntry _baseForOwnRight.js
+996 silly gunzTarPerm extractEntry tap.js
+997 silly gunzTarPerm extractEntry _baseForOwn.js
+998 silly gunzTarPerm extractEntry template.js
+999 silly gunzTarPerm extractEntry _baseFor.js
+1000 silly gunzTarPerm extractEntry templateSettings.js
+1001 silly gunzTarPerm extractEntry _baseFlatten.js
+1002 silly gunzTarPerm extractEntry throttle.js
+1003 silly gunzTarPerm extractEntry _baseFindKey.js
+1004 silly gunzTarPerm extractEntry thru.js
+1005 silly gunzTarPerm extractEntry _baseFindIndex.js
+1006 silly gunzTarPerm extractEntry times.js
+1007 silly gunzTarPerm extractEntry _baseFilter.js
+1008 silly gunzTarPerm extractEntry toArray.js
+1009 silly gunzTarPerm extractEntry _baseFill.js
+1010 silly gunzTarPerm extractEntry toFinite.js
+1011 silly gunzTarPerm extractEntry _baseExtremum.js
+1012 silly gunzTarPerm extractEntry toInteger.js
+1013 silly gunzTarPerm extractEntry _baseEvery.js
+1014 silly gunzTarPerm extractEntry toIterator.js
+1015 silly gunzTarPerm extractEntry _baseEachRight.js
+1016 silly gunzTarPerm extractEntry toJSON.js
+1017 silly gunzTarPerm extractEntry _baseEach.js
+1018 silly gunzTarPerm extractEntry toLength.js
+1019 silly gunzTarPerm extractEntry _baseDifference.js
+1020 silly gunzTarPerm extractEntry toLower.js
+1021 silly gunzTarPerm extractEntry _baseDelay.js
+1022 silly gunzTarPerm extractEntry toNumber.js
+1023 silly gunzTarPerm extractEntry _baseCreate.js
+1024 silly gunzTarPerm extractEntry toPairs.js
+1025 silly gunzTarPerm extractEntry _baseConformsTo.js
+1026 silly gunzTarPerm extractEntry toPairsIn.js
+1027 silly gunzTarPerm extractEntry _baseConforms.js
+1028 silly gunzTarPerm extractEntry toPath.js
+1029 silly gunzTarPerm extractEntry _baseClone.js
+1030 silly gunzTarPerm extractEntry toPlainObject.js
+1031 silly gunzTarPerm extractEntry _baseClamp.js
+1032 silly gunzTarPerm extractEntry toSafeInteger.js
+1033 silly gunzTarPerm extractEntry _baseAt.js
+1034 silly gunzTarPerm extractEntry toString.js
+1035 silly gunzTarPerm extractEntry _baseAssignValue.js
+1036 silly gunzTarPerm extractEntry toUpper.js
+1037 silly gunzTarPerm extractEntry _baseAssign.js
+1038 silly gunzTarPerm extractEntry transform.js
+1039 silly gunzTarPerm extractEntry _baseAggregator.js
+1040 silly gunzTarPerm extractEntry trim.js
+1041 silly gunzTarPerm extractEntry _assocIndexOf.js
+1042 silly gunzTarPerm extractEntry trimEnd.js
+1043 silly gunzTarPerm extractEntry _assignValue.js
+1044 silly gunzTarPerm extractEntry trimStart.js
+1045 silly gunzTarPerm extractEntry _assignMergeValue.js
+1046 silly gunzTarPerm extractEntry truncate.js
+1047 silly gunzTarPerm extractEntry _assignInDefaults.js
+1048 silly gunzTarPerm extractEntry unary.js
+1049 silly gunzTarPerm extractEntry _asciiWords.js
+1050 silly gunzTarPerm extractEntry unescape.js
+1051 silly gunzTarPerm extractEntry _asciiToArray.js
+1052 silly gunzTarPerm extractEntry union.js
+1053 silly gunzTarPerm extractEntry _asciiSize.js
+1054 silly gunzTarPerm extractEntry unionBy.js
+1055 silly gunzTarPerm extractEntry _arraySome.js
+1056 silly gunzTarPerm extractEntry unionWith.js
+1057 silly gunzTarPerm extractEntry _arrayShuffle.js
+1058 silly gunzTarPerm extractEntry uniq.js
+1059 silly gunzTarPerm extractEntry _arraySampleSize.js
+1060 silly gunzTarPerm extractEntry uniqBy.js
+1061 silly gunzTarPerm extractEntry _arraySample.js
+1062 silly gunzTarPerm extractEntry uniqWith.js
+1063 silly gunzTarPerm extractEntry _arrayReduceRight.js
+1064 silly gunzTarPerm extractEntry uniqueId.js
+1065 silly gunzTarPerm extractEntry _arrayReduce.js
+1066 silly gunzTarPerm extractEntry unset.js
+1067 silly gunzTarPerm extractEntry _arrayPush.js
+1068 silly gunzTarPerm extractEntry unzip.js
+1069 silly gunzTarPerm extractEntry _arrayMap.js
+1070 silly gunzTarPerm extractEntry unzipWith.js
+1071 silly gunzTarPerm extractEntry _arrayLikeKeys.js
+1072 silly gunzTarPerm extractEntry update.js
+1073 silly gunzTarPerm extractEntry _arrayIncludesWith.js
+1074 silly gunzTarPerm extractEntry updateWith.js
+1075 silly gunzTarPerm extractEntry _arrayIncludes.js
+1076 silly gunzTarPerm extractEntry upperCase.js
+1077 silly gunzTarPerm extractEntry _arrayFilter.js
+1078 silly gunzTarPerm extractEntry upperFirst.js
+1079 silly gunzTarPerm extractEntry _arrayEvery.js
+1080 silly gunzTarPerm extractEntry util.js
+1081 silly gunzTarPerm extractEntry _arrayEachRight.js
+1082 silly gunzTarPerm extractEntry value.js
+1083 silly gunzTarPerm extractEntry _arrayEach.js
+1084 silly gunzTarPerm extractEntry valueOf.js
+1085 silly gunzTarPerm extractEntry _arrayAggregator.js
+1086 silly gunzTarPerm extractEntry values.js
+1087 silly gunzTarPerm extractEntry _apply.js
+1088 silly gunzTarPerm extractEntry valuesIn.js
+1089 silly gunzTarPerm extractEntry _addSetEntry.js
+1090 silly gunzTarPerm extractEntry without.js
+1091 silly gunzTarPerm extractEntry _addMapEntry.js
+1092 silly gunzTarPerm extractEntry words.js
+1093 silly gunzTarPerm extractEntry _WeakMap.js
+1094 silly gunzTarPerm extractEntry wrap.js
+1095 silly gunzTarPerm extractEntry _Uint8Array.js
+1096 silly gunzTarPerm extractEntry wrapperAt.js
+1097 silly gunzTarPerm extractEntry _Symbol.js
+1098 silly gunzTarPerm extractEntry wrapperChain.js
+1099 silly gunzTarPerm extractEntry _Stack.js
+1100 silly gunzTarPerm extractEntry wrapperLodash.js
+1101 silly gunzTarPerm extractEntry _SetCache.js
+1102 silly gunzTarPerm extractEntry wrapperReverse.js
+1103 silly gunzTarPerm extractEntry _Set.js
+1104 silly gunzTarPerm extractEntry wrapperValue.js
+1105 silly gunzTarPerm extractEntry _Promise.js
+1106 silly gunzTarPerm extractEntry xor.js
+1107 silly gunzTarPerm extractEntry _MapCache.js
+1108 silly gunzTarPerm extractEntry xorBy.js
+1109 silly gunzTarPerm extractEntry _Map.js
+1110 silly gunzTarPerm extractEntry xorWith.js
+1111 silly gunzTarPerm extractEntry _LodashWrapper.js
+1112 silly gunzTarPerm extractEntry zip.js
+1113 silly gunzTarPerm extractEntry _ListCache.js
+1114 silly gunzTarPerm extractEntry zipObject.js
+1115 silly gunzTarPerm extractEntry chain.js
+1116 silly gunzTarPerm extractEntry zipWith.js
+1117 silly gunzTarPerm extractEntry ceil.js
+1118 silly gunzTarPerm extractEntry fp/F.js
+1119 silly gunzTarPerm extractEntry fp/lang.js
+1120 silly gunzTarPerm extractEntry fp/last.js
+1121 silly gunzTarPerm extractEntry fp/lastIndexOf.js
+1122 silly gunzTarPerm extractEntry fp/keysIn.js
+1123 silly gunzTarPerm extractEntry fp/lowerCase.js
+1124 silly gunzTarPerm extractEntry fp/lowerFirst.js
+1125 silly gunzTarPerm extractEntry fp/lt.js
+1126 silly gunzTarPerm extractEntry fp/lte.js
+1127 silly gunzTarPerm extractEntry fp/map.js
+1128 silly gunzTarPerm extractEntry fp/keys.js
+1129 silly gunzTarPerm extractEntry fp/mapKeys.js
+1130 silly gunzTarPerm extractEntry fp/keyBy.js
+1131 silly gunzTarPerm extractEntry fp/mapValues.js
+1132 silly gunzTarPerm extractEntry fp/kebabCase.js
+1133 silly gunzTarPerm extractEntry fp/matches.js
+1134 silly gunzTarPerm extractEntry fp/juxt.js
+1135 silly gunzTarPerm extractEntry fp/matchesProperty.js
+1136 silly gunzTarPerm extractEntry fp/join.js
+1137 silly gunzTarPerm extractEntry fp/math.js
+1138 silly gunzTarPerm extractEntry fp/iteratee.js
+1139 silly gunzTarPerm extractEntry fp/max.js
+1140 silly gunzTarPerm extractEntry fp/isWeakSet.js
+1141 silly gunzTarPerm extractEntry fp/maxBy.js
+1142 silly gunzTarPerm extractEntry fp/isWeakMap.js
+1143 silly gunzTarPerm extractEntry fp/mean.js
+1144 silly gunzTarPerm extractEntry fp/isUndefined.js
+1145 silly gunzTarPerm extractEntry fp/meanBy.js
+1146 silly gunzTarPerm extractEntry fp/isTypedArray.js
+1147 silly gunzTarPerm extractEntry fp/memoize.js
+1148 silly gunzTarPerm extractEntry fp/isSymbol.js
+1149 silly gunzTarPerm extractEntry fp/merge.js
+1150 silly gunzTarPerm extractEntry fp/isString.js
+1151 silly gunzTarPerm extractEntry fp/mergeAll.js
+1152 silly gunzTarPerm extractEntry fp/isSet.js
+1153 silly gunzTarPerm extractEntry fp/mergeAllWith.js
+1154 silly gunzTarPerm extractEntry fp/isSafeInteger.js
+1155 silly gunzTarPerm extractEntry fp/mergeWith.js
+1156 silly gunzTarPerm extractEntry fp/isRegExp.js
+1157 silly gunzTarPerm extractEntry fp/method.js
+1158 silly gunzTarPerm extractEntry fp/isPlainObject.js
+1159 silly gunzTarPerm extractEntry fp/methodOf.js
+1160 silly gunzTarPerm extractEntry fp/isObjectLike.js
+1161 silly gunzTarPerm extractEntry fp/min.js
+1162 silly gunzTarPerm extractEntry fp/isObject.js
+1163 silly gunzTarPerm extractEntry fp/minBy.js
+1164 silly gunzTarPerm extractEntry fp/isNumber.js
+1165 silly gunzTarPerm extractEntry fp/mixin.js
+1166 silly gunzTarPerm extractEntry fp/isNull.js
+1167 silly gunzTarPerm extractEntry fp/multiply.js
+1168 silly gunzTarPerm extractEntry fp/isNil.js
+1169 silly gunzTarPerm extractEntry fp/nAry.js
+1170 silly gunzTarPerm extractEntry fp/isNative.js
+1171 silly gunzTarPerm extractEntry fp/negate.js
+1172 silly gunzTarPerm extractEntry fp/isNaN.js
+1173 silly gunzTarPerm extractEntry fp/next.js
+1174 silly gunzTarPerm extractEntry fp/isMatchWith.js
+1175 silly gunzTarPerm extractEntry fp/noop.js
+1176 silly gunzTarPerm extractEntry fp/isMatch.js
+1177 silly gunzTarPerm extractEntry fp/now.js
+1178 silly gunzTarPerm extractEntry fp/isMap.js
+1179 silly gunzTarPerm extractEntry fp/nth.js
+1180 silly gunzTarPerm extractEntry fp/isLength.js
+1181 silly gunzTarPerm extractEntry fp/nthArg.js
+1182 silly gunzTarPerm extractEntry fp/isInteger.js
+1183 silly gunzTarPerm extractEntry fp/number.js
+1184 silly gunzTarPerm extractEntry fp/isFunction.js
+1185 silly gunzTarPerm extractEntry fp/object.js
+1186 silly gunzTarPerm extractEntry fp/isFinite.js
+1187 silly gunzTarPerm extractEntry fp/omit.js
+1188 silly gunzTarPerm extractEntry fp/isError.js
+1189 silly gunzTarPerm extractEntry fp/omitAll.js
+1190 silly gunzTarPerm extractEntry fp/isEqualWith.js
+1191 silly gunzTarPerm extractEntry fp/omitBy.js
+1192 silly gunzTarPerm extractEntry fp/isEqual.js
+1193 silly gunzTarPerm extractEntry fp/once.js
+1194 silly gunzTarPerm extractEntry fp/isEmpty.js
+1195 silly gunzTarPerm extractEntry fp/orderBy.js
+1196 silly gunzTarPerm extractEntry fp/isElement.js
+1197 silly gunzTarPerm extractEntry fp/over.js
+1198 silly gunzTarPerm extractEntry fp/isDate.js
+1199 silly gunzTarPerm extractEntry fp/overArgs.js
+1200 silly gunzTarPerm extractEntry fp/isBuffer.js
+1201 silly gunzTarPerm extractEntry fp/overEvery.js
+1202 silly gunzTarPerm extractEntry fp/isBoolean.js
+1203 silly gunzTarPerm extractEntry fp/overSome.js
+1204 silly gunzTarPerm extractEntry fp/isArrayLikeObject.js
+1205 silly gunzTarPerm extractEntry fp/pad.js
+1206 silly gunzTarPerm extractEntry fp/isArrayLike.js
+1207 silly gunzTarPerm extractEntry fp/padChars.js
+1208 silly gunzTarPerm extractEntry fp/isArrayBuffer.js
+1209 silly gunzTarPerm extractEntry fp/padCharsEnd.js
+1210 silly gunzTarPerm extractEntry fp/isArray.js
+1211 silly gunzTarPerm extractEntry fp/padCharsStart.js
+1212 silly gunzTarPerm extractEntry fp/isArguments.js
+1213 silly gunzTarPerm extractEntry fp/padEnd.js
+1214 silly gunzTarPerm extractEntry fp/invokeMap.js
+1215 silly gunzTarPerm extractEntry fp/padStart.js
+1216 silly gunzTarPerm extractEntry fp/invokeArgsMap.js
+1217 silly gunzTarPerm extractEntry fp/parseInt.js
+1218 silly gunzTarPerm extractEntry fp/invokeArgs.js
+1219 silly gunzTarPerm extractEntry fp/partial.js
+1220 silly gunzTarPerm extractEntry fp/invoke.js
+1221 silly gunzTarPerm extractEntry fp/partialRight.js
+1222 silly gunzTarPerm extractEntry fp/invertObj.js
+1223 silly gunzTarPerm extractEntry fp/partition.js
+1224 silly gunzTarPerm extractEntry fp/invertBy.js
+1225 silly gunzTarPerm extractEntry fp/path.js
+1226 silly gunzTarPerm extractEntry fp/invert.js
+1227 silly gunzTarPerm extractEntry fp/pathEq.js
+1228 silly gunzTarPerm extractEntry fp/intersectionWith.js
+1229 silly gunzTarPerm extractEntry fp/pathOr.js
+1230 silly gunzTarPerm extractEntry fp/intersectionBy.js
+1231 silly gunzTarPerm extractEntry fp/paths.js
+1232 silly gunzTarPerm extractEntry fp/intersection.js
+1233 silly gunzTarPerm extractEntry fp/pick.js
+1234 silly gunzTarPerm extractEntry fp/initial.js
+1235 silly gunzTarPerm extractEntry fp/pickAll.js
+1236 silly gunzTarPerm extractEntry fp/init.js
+1237 silly gunzTarPerm extractEntry fp/pickBy.js
+1238 silly gunzTarPerm extractEntry fp/indexOfFrom.js
+1239 silly gunzTarPerm extractEntry fp/pipe.js
+1240 silly gunzTarPerm extractEntry fp/indexOf.js
+1241 silly gunzTarPerm extractEntry fp/placeholder.js
+1242 silly gunzTarPerm extractEntry fp/indexBy.js
+1243 silly gunzTarPerm extractEntry fp/plant.js
+1244 silly gunzTarPerm extractEntry fp/includesFrom.js
+1245 silly gunzTarPerm extractEntry fp/pluck.js
+1246 silly gunzTarPerm extractEntry fp/includes.js
+1247 silly gunzTarPerm extractEntry fp/prop.js
+1248 silly gunzTarPerm extractEntry fp/inRange.js
+1249 silly gunzTarPerm extractEntry fp/propEq.js
+1250 silly gunzTarPerm extractEntry fp/identity.js
+1251 silly gunzTarPerm extractEntry fp/propOr.js
+1252 silly gunzTarPerm extractEntry fp/identical.js
+1253 silly gunzTarPerm extractEntry fp/property.js
+1254 silly gunzTarPerm extractEntry fp/head.js
+1255 silly gunzTarPerm extractEntry fp/propertyOf.js
+1256 silly gunzTarPerm extractEntry fp/hasIn.js
+1257 silly gunzTarPerm extractEntry fp/props.js
+1258 silly gunzTarPerm extractEntry fp/has.js
+1259 silly gunzTarPerm extractEntry fp/pull.js
+1260 silly gunzTarPerm extractEntry fp/gte.js
+1261 silly gunzTarPerm extractEntry fp/pullAll.js
+1262 silly gunzTarPerm extractEntry fp/gt.js
+1263 silly gunzTarPerm extractEntry fp/pullAllBy.js
+1264 silly gunzTarPerm extractEntry fp/groupBy.js
+1265 silly gunzTarPerm extractEntry fp/pullAllWith.js
+1266 silly gunzTarPerm extractEntry fp/getOr.js
+1267 silly gunzTarPerm extractEntry fp/pullAt.js
+1268 silly gunzTarPerm extractEntry fp/get.js
+1269 silly gunzTarPerm extractEntry fp/random.js
+1270 silly gunzTarPerm extractEntry fp/functionsIn.js
+1271 silly gunzTarPerm extractEntry fp/range.js
+1272 silly gunzTarPerm extractEntry fp/functions.js
+1273 silly gunzTarPerm extractEntry fp/rangeRight.js
+1274 silly gunzTarPerm extractEntry fp/function.js
+1275 silly gunzTarPerm extractEntry fp/rangeStep.js
+1276 silly gunzTarPerm extractEntry fp/fromPairs.js
+1277 silly gunzTarPerm extractEntry fp/rangeStepRight.js
+1278 silly gunzTarPerm extractEntry fp/forOwnRight.js
+1279 silly gunzTarPerm extractEntry fp/rearg.js
+1280 silly gunzTarPerm extractEntry fp/forOwn.js
+1281 silly gunzTarPerm extractEntry fp/reduce.js
+1282 silly gunzTarPerm extractEntry fp/forInRight.js
+1283 silly gunzTarPerm extractEntry fp/reduceRight.js
+1284 silly gunzTarPerm extractEntry fp/forIn.js
+1285 silly gunzTarPerm extractEntry fp/reject.js
+1286 silly gunzTarPerm extractEntry fp/forEachRight.js
+1287 silly gunzTarPerm extractEntry fp/remove.js
+1288 silly gunzTarPerm extractEntry fp/forEach.js
+1289 silly gunzTarPerm extractEntry fp/repeat.js
+1290 silly gunzTarPerm extractEntry fp/flowRight.js
+1291 silly gunzTarPerm extractEntry fp/replace.js
+1292 silly gunzTarPerm extractEntry fp/flow.js
+1293 silly gunzTarPerm extractEntry fp/rest.js
+1294 silly gunzTarPerm extractEntry fp/floor.js
+1295 silly gunzTarPerm extractEntry fp/restFrom.js
+1296 silly gunzTarPerm extractEntry fp/flip.js
+1297 silly gunzTarPerm extractEntry fp/result.js
+1298 silly gunzTarPerm extractEntry fp/flattenDepth.js
+1299 silly gunzTarPerm extractEntry fp/reverse.js
+1300 silly gunzTarPerm extractEntry fp/flattenDeep.js
+1301 silly gunzTarPerm extractEntry fp/round.js
+1302 silly gunzTarPerm extractEntry fp/flatten.js
+1303 silly gunzTarPerm extractEntry fp/sample.js
+1304 silly gunzTarPerm extractEntry fp/flatMapDepth.js
+1305 silly gunzTarPerm extractEntry fp/sampleSize.js
+1306 silly gunzTarPerm extractEntry fp/flatMapDeep.js
+1307 silly gunzTarPerm extractEntry fp/seq.js
+1308 silly gunzTarPerm extractEntry fp/flatMap.js
+1309 silly gunzTarPerm extractEntry fp/set.js
+1310 silly gunzTarPerm extractEntry fp/first.js
+1311 silly gunzTarPerm extractEntry fp/setWith.js
+1312 silly gunzTarPerm extractEntry fp/findLastKey.js
+1313 silly gunzTarPerm extractEntry fp/shuffle.js
+1314 silly gunzTarPerm extractEntry fp/findLastIndexFrom.js
+1315 silly gunzTarPerm extractEntry fp/size.js
+1316 silly gunzTarPerm extractEntry fp/findLastIndex.js
+1317 silly gunzTarPerm extractEntry fp/slice.js
+1318 silly gunzTarPerm extractEntry fp/findLastFrom.js
+1319 silly gunzTarPerm extractEntry fp/snakeCase.js
+1320 silly gunzTarPerm extractEntry fp/findLast.js
+1321 silly gunzTarPerm extractEntry fp/some.js
+1322 silly gunzTarPerm extractEntry fp/findKey.js
+1323 silly gunzTarPerm extractEntry fp/sortBy.js
+1324 silly gunzTarPerm extractEntry fp/findIndexFrom.js
+1325 silly gunzTarPerm extractEntry fp/sortedIndex.js
+1326 silly gunzTarPerm extractEntry fp/findIndex.js
+1327 silly gunzTarPerm extractEntry fp/sortedIndexBy.js
+1328 silly gunzTarPerm extractEntry fp/findFrom.js
+1329 silly gunzTarPerm extractEntry fp/sortedIndexOf.js
+1330 silly gunzTarPerm extractEntry fp/find.js
+1331 silly gunzTarPerm extractEntry fp/sortedLastIndex.js
+1332 silly gunzTarPerm extractEntry fp/filter.js
+1333 silly gunzTarPerm extractEntry fp/sortedLastIndexBy.js
+1334 silly gunzTarPerm extractEntry fp/fill.js
+1335 silly gunzTarPerm extractEntry fp/sortedLastIndexOf.js
+1336 silly gunzTarPerm extractEntry fp/extendWith.js
+1337 silly gunzTarPerm extractEntry fp/sortedUniq.js
+1338 silly gunzTarPerm extractEntry fp/extendAllWith.js
+1339 silly gunzTarPerm extractEntry fp/sortedUniqBy.js
+1340 silly gunzTarPerm extractEntry fp/extendAll.js
+1341 silly gunzTarPerm extractEntry fp/split.js
+1342 silly gunzTarPerm extractEntry fp/extend.js
+1343 silly gunzTarPerm extractEntry fp/spread.js
+1344 silly gunzTarPerm extractEntry fp/every.js
+1345 silly gunzTarPerm extractEntry fp/spreadFrom.js
+1346 silly gunzTarPerm extractEntry fp/escapeRegExp.js
+1347 silly gunzTarPerm extractEntry fp/startCase.js
+1348 silly gunzTarPerm extractEntry fp/escape.js
+1349 silly gunzTarPerm extractEntry fp/startsWith.js
+1350 silly gunzTarPerm extractEntry fp/equals.js
+1351 silly gunzTarPerm extractEntry fp/string.js
+1352 silly gunzTarPerm extractEntry fp/eq.js
+1353 silly gunzTarPerm extractEntry fp/stubArray.js
+1354 silly gunzTarPerm extractEntry fp/entriesIn.js
+1355 silly gunzTarPerm extractEntry fp/stubFalse.js
+1356 silly gunzTarPerm extractEntry fp/entries.js
+1357 silly gunzTarPerm extractEntry fp/stubObject.js
+1358 silly gunzTarPerm extractEntry fp/endsWith.js
+1359 silly gunzTarPerm extractEntry fp/stubString.js
+1360 silly gunzTarPerm extractEntry fp/eachRight.js
+1361 silly gunzTarPerm extractEntry fp/stubTrue.js
+1362 silly gunzTarPerm extractEntry fp/each.js
+1363 silly gunzTarPerm extractEntry fp/subtract.js
+1364 silly gunzTarPerm extractEntry fp/dropWhile.js
+1365 silly gunzTarPerm extractEntry fp/sum.js
+1366 silly gunzTarPerm extractEntry fp/dropRightWhile.js
+1367 silly gunzTarPerm extractEntry fp/sumBy.js
+1368 silly gunzTarPerm extractEntry fp/dropRight.js
+1369 silly gunzTarPerm extractEntry fp/symmetricDifference.js
+1370 silly gunzTarPerm extractEntry fp/dropLastWhile.js
+1371 silly gunzTarPerm extractEntry fp/symmetricDifferenceBy.js
+1372 silly gunzTarPerm extractEntry fp/dropLast.js
+1373 silly gunzTarPerm extractEntry fp/symmetricDifferenceWith.js
+1374 silly gunzTarPerm extractEntry fp/drop.js
+1375 silly gunzTarPerm extractEntry fp/tail.js
+1376 silly gunzTarPerm extractEntry fp/divide.js
+1377 silly gunzTarPerm extractEntry fp/take.js
+1378 silly gunzTarPerm extractEntry fp/dissocPath.js
+1379 silly gunzTarPerm extractEntry fp/takeLast.js
+1380 silly gunzTarPerm extractEntry fp/dissoc.js
+1381 silly gunzTarPerm extractEntry fp/takeLastWhile.js
+1382 silly gunzTarPerm extractEntry fp/differenceWith.js
+1383 silly gunzTarPerm extractEntry fp/takeRight.js
+1384 silly gunzTarPerm extractEntry fp/differenceBy.js
+1385 silly gunzTarPerm extractEntry fp/takeRightWhile.js
+1386 silly gunzTarPerm extractEntry fp/difference.js
+1387 silly gunzTarPerm extractEntry fp/takeWhile.js
+1388 silly gunzTarPerm extractEntry fp/delay.js
+1389 silly gunzTarPerm extractEntry fp/tap.js
+1390 silly gunzTarPerm extractEntry fp/defer.js
+1391 silly gunzTarPerm extractEntry fp/template.js
+1392 silly gunzTarPerm extractEntry fp/defaultsDeepAll.js
+1393 silly gunzTarPerm extractEntry fp/templateSettings.js
+1394 silly gunzTarPerm extractEntry fp/defaultsDeep.js
+1395 silly gunzTarPerm extractEntry fp/throttle.js
+1396 silly gunzTarPerm extractEntry fp/defaultsAll.js
+1397 silly gunzTarPerm extractEntry fp/thru.js
+1398 silly gunzTarPerm extractEntry fp/defaults.js
+1399 silly gunzTarPerm extractEntry fp/times.js
+1400 silly gunzTarPerm extractEntry fp/defaultTo.js
+1401 silly gunzTarPerm extractEntry fp/toArray.js
+1402 silly gunzTarPerm extractEntry fp/deburr.js
+1403 silly gunzTarPerm extractEntry fp/toFinite.js
+1404 silly gunzTarPerm extractEntry fp/debounce.js
+1405 silly gunzTarPerm extractEntry fp/toInteger.js
+1406 silly gunzTarPerm extractEntry fp/date.js
+1407 silly gunzTarPerm extractEntry fp/toIterator.js
+1408 silly gunzTarPerm extractEntry fp/curryRightN.js
+1409 silly gunzTarPerm extractEntry fp/toJSON.js
+1410 silly gunzTarPerm extractEntry fp/curryRight.js
+1411 silly gunzTarPerm extractEntry fp/toLength.js
+1412 silly gunzTarPerm extractEntry fp/curryN.js
+1413 silly gunzTarPerm extractEntry fp/toLower.js
+1414 silly gunzTarPerm extractEntry fp/curry.js
+1415 silly gunzTarPerm extractEntry fp/toNumber.js
+1416 silly gunzTarPerm extractEntry fp/create.js
+1417 silly gunzTarPerm extractEntry fp/toPairs.js
+1418 silly gunzTarPerm extractEntry fp/countBy.js
+1419 silly gunzTarPerm extractEntry fp/toPairsIn.js
+1420 silly gunzTarPerm extractEntry fp/convert.js
+1421 silly gunzTarPerm extractEntry fp/toPath.js
+1422 silly gunzTarPerm extractEntry fp/contains.js
+1423 silly gunzTarPerm extractEntry fp/toPlainObject.js
+1424 silly gunzTarPerm extractEntry fp/constant.js
+1425 silly gunzTarPerm extractEntry fp/toSafeInteger.js
+1426 silly gunzTarPerm extractEntry fp/conformsTo.js
+1427 silly gunzTarPerm extractEntry fp/toString.js
+1428 silly gunzTarPerm extractEntry fp/conforms.js
+1429 silly gunzTarPerm extractEntry fp/toUpper.js
+1430 silly gunzTarPerm extractEntry fp/cond.js
+1431 silly gunzTarPerm extractEntry fp/transform.js
+1432 silly gunzTarPerm extractEntry fp/concat.js
+1433 silly gunzTarPerm extractEntry fp/trim.js
+1434 silly gunzTarPerm extractEntry fp/compose.js
+1435 silly gunzTarPerm extractEntry fp/trimChars.js
+1436 silly gunzTarPerm extractEntry fp/complement.js
+1437 silly gunzTarPerm extractEntry fp/trimCharsEnd.js
+1438 silly gunzTarPerm extractEntry fp/compact.js
+1439 silly gunzTarPerm extractEntry fp/trimCharsStart.js
+1440 silly gunzTarPerm extractEntry fp/commit.js
+1441 silly gunzTarPerm extractEntry fp/trimEnd.js
+1442 silly gunzTarPerm extractEntry fp/collection.js
+1443 silly gunzTarPerm extractEntry fp/trimStart.js
+1444 silly gunzTarPerm extractEntry fp/cloneWith.js
+1445 silly gunzTarPerm extractEntry fp/truncate.js
+1446 silly gunzTarPerm extractEntry fp/cloneDeepWith.js
+1447 silly gunzTarPerm extractEntry fp/unapply.js
+1448 silly gunzTarPerm extractEntry fp/cloneDeep.js
+1449 silly gunzTarPerm extractEntry fp/unary.js
+1450 silly gunzTarPerm extractEntry fp/clone.js
+1451 silly gunzTarPerm extractEntry fp/unescape.js
+1452 silly gunzTarPerm extractEntry fp/clamp.js
+1453 silly gunzTarPerm extractEntry fp/union.js
+1454 silly gunzTarPerm extractEntry fp/chunk.js
+1455 silly gunzTarPerm extractEntry fp/unionBy.js
+1456 silly gunzTarPerm extractEntry fp/chain.js
+1457 silly gunzTarPerm extractEntry fp/unionWith.js
+1458 silly gunzTarPerm extractEntry fp/ceil.js
+1459 silly gunzTarPerm extractEntry fp/uniq.js
+1460 silly gunzTarPerm extractEntry fp/castArray.js
+1461 silly gunzTarPerm extractEntry fp/uniqBy.js
+1462 silly gunzTarPerm extractEntry fp/capitalize.js
+1463 silly gunzTarPerm extractEntry fp/uniqWith.js
+1464 silly gunzTarPerm extractEntry fp/camelCase.js
+1465 silly gunzTarPerm extractEntry fp/uniqueId.js
+1466 silly gunzTarPerm extractEntry fp/bindKey.js
+1467 silly gunzTarPerm extractEntry fp/unnest.js
+1468 silly gunzTarPerm extractEntry fp/bindAll.js
+1469 silly gunzTarPerm extractEntry fp/unset.js
+1470 silly gunzTarPerm extractEntry fp/bind.js
+1471 silly gunzTarPerm extractEntry fp/unzip.js
+1472 silly gunzTarPerm extractEntry fp/before.js
+1473 silly gunzTarPerm extractEntry fp/unzipWith.js
+1474 silly gunzTarPerm extractEntry fp/attempt.js
+1475 silly gunzTarPerm extractEntry fp/update.js
+1476 silly gunzTarPerm extractEntry fp/at.js
+1477 silly gunzTarPerm extractEntry fp/updateWith.js
+1478 silly gunzTarPerm extractEntry fp/assocPath.js
+1479 silly gunzTarPerm extractEntry fp/upperCase.js
+1480 silly gunzTarPerm extractEntry fp/assoc.js
+1481 silly gunzTarPerm extractEntry fp/upperFirst.js
+1482 silly gunzTarPerm extractEntry fp/assignWith.js
+1483 silly gunzTarPerm extractEntry fp/useWith.js
+1484 silly gunzTarPerm extractEntry fp/assignInWith.js
+1485 silly gunzTarPerm extractEntry fp/util.js
+1486 silly gunzTarPerm extractEntry fp/assignInAllWith.js
+1487 silly gunzTarPerm extractEntry fp/value.js
+1488 silly gunzTarPerm extractEntry fp/assignInAll.js
+1489 silly gunzTarPerm extractEntry fp/valueOf.js
+1490 silly gunzTarPerm extractEntry fp/assignIn.js
+1491 silly gunzTarPerm extractEntry fp/values.js
+1492 silly gunzTarPerm extractEntry fp/assignAllWith.js
+1493 silly gunzTarPerm extractEntry fp/valuesIn.js
+1494 silly gunzTarPerm extractEntry fp/assignAll.js
+1495 silly gunzTarPerm extractEntry fp/where.js
+1496 silly gunzTarPerm extractEntry fp/assign.js
+1497 silly gunzTarPerm extractEntry fp/whereEq.js
+1498 silly gunzTarPerm extractEntry fp/ary.js
+1499 silly gunzTarPerm extractEntry fp/without.js
+1500 silly gunzTarPerm extractEntry fp/array.js
+1501 silly gunzTarPerm extractEntry fp/words.js
+1502 silly gunzTarPerm extractEntry fp/apply.js
+1503 silly gunzTarPerm extractEntry fp/wrap.js
+1504 silly gunzTarPerm extractEntry fp/anyPass.js
+1505 silly gunzTarPerm extractEntry fp/wrapperAt.js
+1506 silly gunzTarPerm extractEntry fp/any.js
+1507 silly gunzTarPerm extractEntry fp/wrapperChain.js
+1508 silly gunzTarPerm extractEntry fp/always.js
+1509 silly gunzTarPerm extractEntry fp/wrapperLodash.js
+1510 silly gunzTarPerm extractEntry fp/allPass.js
+1511 silly gunzTarPerm extractEntry fp/wrapperReverse.js
+1512 silly gunzTarPerm extractEntry fp/all.js
+1513 silly gunzTarPerm extractEntry fp/wrapperValue.js
+1514 silly gunzTarPerm extractEntry fp/after.js
+1515 silly gunzTarPerm extractEntry fp/xor.js
+1516 silly gunzTarPerm extractEntry fp/add.js
+1517 silly gunzTarPerm extractEntry fp/xorBy.js
+1518 silly gunzTarPerm extractEntry fp/_util.js
+1519 silly gunzTarPerm extractEntry fp/xorWith.js
+1520 silly gunzTarPerm extractEntry fp/_mapping.js
+1521 silly gunzTarPerm extractEntry fp/zip.js
+1522 silly gunzTarPerm extractEntry fp/_falseOptions.js
+1523 silly gunzTarPerm extractEntry fp/zipAll.js
+1524 silly gunzTarPerm extractEntry fp/_convertBrowser.js
+1525 silly gunzTarPerm extractEntry fp/zipObj.js
+1526 silly gunzTarPerm extractEntry fp/_baseConvert.js
+1527 silly gunzTarPerm extractEntry fp/zipObject.js
+1528 silly gunzTarPerm extractEntry fp/__.js
+1529 silly gunzTarPerm extractEntry fp/zipObjectDeep.js
+1530 silly gunzTarPerm extractEntry fp/T.js
+1531 silly gunzTarPerm extractEntry fp/zipWith.js
+1532 silly gunzTarPerm extractEntry fp/lastIndexOfFrom.js
+1533 verbose write writing to /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash/package.json
+1534 info preinstall lodash@4.16.6
+1535 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash/package.json
+1536 verbose readDependencies loading dependencies from /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash/package.json
+1537 silly install resolved []
+1538 verbose about to build /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+1539 info build /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+1540 info linkStuff lodash@4.16.6
+1541 silly linkStuff lodash@4.16.6 has /home/ubuntu/workspace/node_modules/react-redux/node_modules as its parent node_modules
+1542 verbose linkBins lodash@4.16.6
+1543 verbose linkMans lodash@4.16.6
+1544 verbose rebuildBundles lodash@4.16.6
+1545 info install lodash@4.16.6
+1546 info postinstall lodash@4.16.6
+1547 verbose unlock done using /home/ubuntu/.npm/_locks/lodash-d57d0a2f98fd70de.lock for /home/ubuntu/workspace/node_modules/react-redux/node_modules/lodash
+1548 verbose about to build /home/ubuntu/workspace/node_modules/react-redux
+1549 info build /home/ubuntu/workspace/node_modules/react-redux
+1550 info linkStuff react-redux@4.4.5
+1551 silly linkStuff react-redux@4.4.5 has /home/ubuntu/workspace/node_modules as its parent node_modules
+1552 verbose linkBins react-redux@4.4.5
+1553 verbose linkMans react-redux@4.4.5
+1554 verbose rebuildBundles react-redux@4.4.5
+1555 verbose rebuildBundles [ '.bin',
+1555 verbose rebuildBundles   'hoist-non-react-statics',
+1555 verbose rebuildBundles   'invariant',
+1555 verbose rebuildBundles   'lodash',
+1555 verbose rebuildBundles   'loose-envify' ]
+1556 info install react-redux@4.4.5
+1557 info postinstall react-redux@4.4.5
+1558 verbose unlock done using /home/ubuntu/.npm/_locks/react-redux-ce866cbae2e91510.lock for /home/ubuntu/workspace/node_modules/react-redux
+1559 verbose validateInstall loading /home/ubuntu/workspace/package.json for validation
+1560 verbose stack Error: The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:125:32
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/lib/install.js:268:7
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1560 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1560 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1560 verbose stack     at cb (/home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1560 verbose stack     at /home/ubuntu/.nvm/versions/node/v4.4.5/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1561 verbose cwd /home/ubuntu/workspace
+1562 error Linux 4.2.0-c9
+1563 error argv "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.5/bin/npm" "install" "--save" "react-redux"
+1564 error node v4.4.5
+1565 error npm  v2.15.5
+1566 error code EPEERINVALID
+1567 error peerinvalid The package react@15.3.0 does not satisfy its siblings' peerDependencies requirements!
+1567 error peerinvalid Peer react-dom@15.3.0 wants react@^15.3.0
+1567 error peerinvalid Peer react-addons-test-utils@15.3.2 wants react@^15.3.2
+1567 error peerinvalid Peer react-addons-update@15.3.2 wants react@^15.3.2
+1567 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
+1568 verbose exit [ 1, true ]

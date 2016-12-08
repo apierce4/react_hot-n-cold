@@ -19,6 +19,7 @@ var gameReducer = function(state, action) {
   state = state || initialState;
 
   if (action.type === actions.START_GAME){
+    console.log('start game');
     return state.concat({
       guessArray: [],
       secretNumber: Math.floor((Math.random() * 100) + 1),
@@ -27,7 +28,10 @@ var gameReducer = function(state, action) {
     });
   }
   else if (action.type === actions.USER_GUESS){
-    if (typeof action.guess === 'number' && (action.guess >= 1 && action.guess <= 100)) {
+     console.log('user guess');
+     console.log(typeof action.guess);
+     var userGuessNum = parseInt(action.guess);
+    if (typeof userGuessNum === 'number' && (userGuessNum >= 1 && userGuessNum <= 100)) {
 
       var currentState = update(state, {
                                   [state.length - 1]: {
@@ -39,6 +43,7 @@ var gameReducer = function(state, action) {
                                     }
                                   });
       console.log(currentState);
+      
       var secretNumber = state[state.length - 1].secretNumber;
       
       if (secretNumber == action.guess) {
@@ -66,7 +71,7 @@ var gameReducer = function(state, action) {
       return currentState;
     }
   }
-  console.log(state);
+  //console.log(state);
   return state;
 };
 
