@@ -23617,7 +23617,8 @@
 	    },
 	    render: function render() {
 	        var userGuesses = this.props.userGuess.map(function (userGuess) {
-	            return React.createElement(UserGuessList, { guess: userGuess, key: userGuess.guessArray });
+	            //console.log(userGuess.guessArray);
+	            return React.createElement(UserGuessList, { guess: userGuess.guessArray, key: userGuess.guessArray });
 	        });
 	        //console.log(userGuesses);
 	
@@ -23636,7 +23637,7 @@
 	                { type: 'button', onClick: this.userGuess },
 	                'Make a Guess!'
 	            ),
-	            React.createElement(UserGuessList, { guess: this.props.userGuess.guess, key: this.props.userGuess.guess })
+	            userGuesses
 	        );
 	    }
 	});
@@ -23658,34 +23659,36 @@
 	'use strict';
 	
 	var React = __webpack_require__(1);
+	
 	//var connect = require('react-redux').connect;
 	
-	//var actions = require('../actions/actions');
+	var actions = __webpack_require__(210);
 	
 	var UserGuesses = React.createClass({
 	    displayName: 'UserGuesses',
 	
-	    updateUserGuessList: function updateUserGuessList(userguess) {
-	        //console.log(userguess);
-	        var guesses = [];
-	        var guess = React.createElement(
-	            'li',
-	            null,
-	            ' ',
-	            this.props.userGuess.guess,
-	            ' '
-	        );
-	        guesses.push(guess);
-	        console.log('here');
-	        //console.log(guess);
-	        return guesses;
-	    },
+	
 	    render: function render() {
-	        //console.log(this.props);
+	
+	        console.log(this.props.guess);
+	        var userGuesses = this.props.guess;
+	        var allguesses = [];
+	        for (var i = 0; i < userGuesses.length; i++) {
+	            console.log(userGuesses[i]);
+	            var guesses = React.createElement(
+	                'li',
+	                null,
+	                ' ',
+	                userGuesses[i],
+	                ' '
+	            );
+	            allguesses.push(guesses);
+	        }
+	        console.log(allguesses);
 	        return React.createElement(
 	            'ul',
-	            { className: 'userguess-history' },
-	            UserGuesses.updateUserGuessList
+	            null,
+	            allguesses
 	        );
 	    }
 	});

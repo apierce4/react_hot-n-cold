@@ -11,13 +11,14 @@ var DisplayGame = React.createClass({
         var userGuessVal = this.refs.userGuess.value;
        // console.log(userGuessVal);
         this.props.dispatch(actions.userGuess(userGuessVal));
-        
     },
     render: function() {
-         var userGuesses = this.props.userGuess.map(function(userGuess) {
-             return <UserGuessList guess={userGuess} key={userGuess.guessArray} />;
-        });
+          var userGuesses = this.props.userGuess.map(function(userGuess) {
+              //console.log(userGuess.guessArray);
+              return <UserGuessList guess={userGuess.guessArray} key={userGuess.guessArray} />;
+         });
         //console.log(userGuesses);
+    
 
       
 
@@ -30,8 +31,10 @@ var DisplayGame = React.createClass({
                 <button type="button" onClick={this.userGuess}>
                     Make a Guess!
                 </button>
-            
-                <UserGuessList guess={this.props.userGuess.guess} key={this.props.userGuess.guess} />
+                
+                {userGuesses}
+                
+               
                 
             </div>
         );
